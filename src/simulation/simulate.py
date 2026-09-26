@@ -20,7 +20,7 @@ from pathlib import Path
 PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 REPORTS_DIR = Path(__file__).resolve().parents[2] / "outputs" / "reports"
 
-NUM_DRIVERS = 20
+NUM_DRIVERS = 25
 SIM_DURATION_MIN = 24 * 60
 MAX_WAIT_FOR_DRIVER_MIN = 15
 RANDOM_SEED = 42

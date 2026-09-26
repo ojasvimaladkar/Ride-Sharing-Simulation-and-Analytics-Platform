@@ -74,11 +74,11 @@ def api_scenarios():
     seed = int(data.get("seed", 42))
 
     scenario_defs = [
-        ("Baseline", 20, 1.0),
-        ("Low Supply (15 drivers)", 15, 1.0),
-        ("High Supply (30 drivers)", 30, 1.0),
-        ("High Demand (+30%)", 20, 1.3),
-        ("Low Demand (-30%)", 20, 0.7),
+        ("Baseline", 25, 1.0),
+        ("Low Supply (18 drivers)", 18, 1.0),
+        ("High Supply (35 drivers)", 35, 1.0),
+        ("High Demand (+30%)", 25, 1.3),
+        ("Low Demand (-30%)", 25, 0.7),
     ]
 
     stats = get_stats()

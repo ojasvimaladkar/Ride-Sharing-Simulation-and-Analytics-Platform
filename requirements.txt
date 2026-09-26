@@ -4,3 +4,4 @@ simpy>=4.1
 matplotlib>=3.7
 flask>=3.0
 scipy>=1.11
+gunicorn>=21.2
