@@ -34,12 +34,10 @@ def load_data(path: Path) -> pd.DataFrame:
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
-    # --- Drop exact duplicate rows ---
     before = len(df)
     df = df.drop_duplicates()
     print(f"Dropped {before - len(df)} duplicate rows")
 
-    # --- Combine Date + Time into a single datetime column ---
     if "Date" in df.columns and "Time" in df.columns:
         df["datetime"] = pd.to_datetime(
             df["Date"].astype(str) + " " + df["Time"].astype(str),
@@ -54,7 +52,6 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         df["day_of_week"] = df["datetime"].dt.day_name()
         df["date_only"] = df["datetime"].dt.date
 
-    # --- Standardize categorical text columns (strip whitespace, consistent case) ---
     categorical_cols = [
         "Booking Status", "Vehicle Type", "Pickup Location", "Drop Location",
         "Payment Method", "Reason for cancelling by Customer",
@@ -65,7 +62,6 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
             df[col] = df[col].astype(str).str.strip()
             df.loc[df[col].isin(["nan", "None", ""]), col] = np.nan
 
-    # --- Numeric columns: coerce to numeric, invalid entries become NaN ---
     numeric_cols = [
         "Avg VTAT", "Avg CTAT", "Booking Value", "Ride Distance",
         "Driver Ratings", "Customer Rating",
@@ -74,14 +70,12 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    # --- Ride status flag, useful downstream for simulation calibration ---
     if "Booking Status" in df.columns:
         df["is_completed"] = df["Booking Status"].str.lower() == "completed"
         df["is_cancelled"] = df["Booking Status"].str.contains(
             "cancel", case=False, na=False
         )
 
-    # --- Missing value report (no silent dropping of rows beyond duplicates/bad dates) ---
     missing = df.isna().sum()
     missing = missing[missing > 0]
     if not missing.empty:
@@ -103,7 +97,7 @@ def save_data(df: pd.DataFrame, filename: str = "ncr_rides_cleaned.csv") -> Path
     return out_path
 
 
-def main():
+def run():
     raw_path = find_raw_csv()
     df = load_data(raw_path)
     df_clean = clean_data(df)
@@ -111,4 +105,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()

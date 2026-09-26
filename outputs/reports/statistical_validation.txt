@@ -1,0 +1,11 @@
+Statistical Validation -- Kolmogorov-Smirnov Test
+==================================================
+wait_time_vs_VTAT: D=0.0528, p=0.231902 -> strong match
+trip_duration_vs_CTAT: D=0.0331, p=0.910571 -> strong match
+distance_vs_RideDistance: D=0.0332, p=0.908474 -> strong match
+
+Caveat: with large sample sizes, KS p-values are often significant
+(p < 0.05) even when distributions are visually very close. The D
+statistic (max gap between cumulative distributions) is the more
+informative number: D < 0.1 strong match, D < 0.2 reasonable, D > 0.3
+suggests a real mismatch worth investigating further.

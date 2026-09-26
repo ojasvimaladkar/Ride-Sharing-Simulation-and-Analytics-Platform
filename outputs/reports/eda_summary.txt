@@ -1,0 +1,10 @@
+EDA Summary — NCR Ride-Sharing Dataset
+=============================================
+Total bookings: 150,000
+
+Ride Outcome Breakdown:
+  Completed:              62.00%
+  Cancelled by Driver:    18.00%
+  Cancelled by Customer:  7.00%
+  No Driver Found:        7.00%
+  Incomplete:             6.00%

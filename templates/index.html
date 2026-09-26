@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ride-Sharing Simulation Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>🚗 Ride-Sharing Simulation &amp; Analytics Platform</h1>
+  <p class="subtitle">NCR ride-sharing dataset &mdash; discrete-event simulation built with SimPy</p>
+</header>
+
+<main>
+  <section class="controls card">
+    <h2>Simulation Settings</h2>
+    <div class="control-row">
+      <label for="numDrivers">Number of Drivers: <span id="numDriversVal">9</span></label>
+      <input type="range" id="numDrivers" min="3" max="30" value="9">
+    </div>
+    <div class="control-row">
+      <label for="demandMultiplier">Demand Multiplier: <span id="demandVal">1.0x</span></label>
+      <input type="range" id="demandMultiplier" min="0.5" max="2.0" step="0.1" value="1.0">
+    </div>
+    <div class="control-row">
+      <label for="seed">Random Seed:</label>
+      <input type="number" id="seed" value="42">
+    </div>
+    <div class="control-row buttons">
+      <button id="runSimBtn" class="primary">Run Simulation</button>
+      <button id="runScenariosBtn">Run Scenario Comparison</button>
+      <button id="downloadBtn" disabled>Download CSV</button>
+    </div>
+  </section>
+
+  <section id="kpiSection" class="kpi-grid" style="display:none;">
+    <div class="kpi-card">
+      <div class="kpi-label">Completion Rate</div>
+      <div class="kpi-value" id="kpiCompletion">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">No Driver Found</div>
+      <div class="kpi-value" id="kpiNoDriver">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Driver Utilization</div>
+      <div class="kpi-value" id="kpiUtilization">--</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg Wait Time</div>
+      <div class="kpi-value" id="kpiWait">--</div>
+    </div>
+  </section>
+
+  <section id="chartsSection" class="charts-grid" style="display:none;">
+    <div class="card">
+      <h3>Ride Outcome Breakdown</h3>
+      <canvas id="outcomeChart"></canvas>
+    </div>
+    <div class="card">
+      <h3>Requests by Hour</h3>
+      <canvas id="hourlyChart"></canvas>
+    </div>
+  </section>
+
+  <section id="tableSection" class="card" style="display:none;">
+    <h3>Simulated Ride Records (sample of 50)</h3>
+    <div class="table-wrap">
+      <table id="ridesTable">
+        <thead><tr id="ridesTableHead"></tr></thead>
+        <tbody id="ridesTableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="scenarioSection" class="card" style="display:none;">
+    <h3>Scenario Comparison</h3>
+    <div class="table-wrap">
+      <table id="scenarioTable">
+        <thead>
+          <tr>
+            <th>Scenario</th><th>Completion %</th><th>No Driver Found %</th>
+            <th>Utilization %</th><th>Avg Wait (min)</th>
+          </tr>
+        </thead>
+        <tbody id="scenarioTableBody"></tbody>
+      </table>
+    </div>
+    <canvas id="scenarioChart"></canvas>
+  </section>
+
+  <section class="card">
+    <h3>About This Project</h3>
+    <p>
+      <strong>Dataset:</strong> Uber Data Analytics Dashboard (NCR, 2024) by Yashdev Laddha, via Kaggle.
+      Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
+    </p>
+    <p><strong>Code:</strong> MIT License. <strong>Data / derived data:</strong> CC BY-SA 4.0.</p>
+  </section>
+</main>
+
+<div id="loadingOverlay" class="loading-overlay" style="display:none;">
+  <div class="spinner"></div>
+  <p>Running simulation...</p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

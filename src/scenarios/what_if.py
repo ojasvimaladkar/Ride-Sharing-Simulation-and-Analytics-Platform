@@ -19,11 +19,11 @@ FIGURES_DIR = Path(__file__).resolve().parents[2] / "outputs" / "figures"
 
 # ----- Scenarios to compare: (label, num_drivers, demand_multiplier) -----
 SCENARIOS = [
-    ("Baseline (9 drivers, normal demand)", 9, 1.0),
-    ("Low driver supply (6 drivers)", 6, 1.0),
-    ("High driver supply (15 drivers)", 15, 1.0),
-    ("Increased demand (+30%, 9 drivers)", 9, 1.3),
-    ("Reduced demand (-30%, 9 drivers)", 9, 0.7),
+    ("Baseline (20 drivers, normal demand)", 20, 1.0),
+    ("Low driver supply (15 drivers)", 15, 1.0),
+    ("High driver supply (30 drivers)", 30, 1.0),
+    ("Increased demand (+30%, 20 drivers)", 20, 1.3),
+    ("Reduced demand (-30%, 20 drivers)", 20, 0.7),
 ]
 
 
