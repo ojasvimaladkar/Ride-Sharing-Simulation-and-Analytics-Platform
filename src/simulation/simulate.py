@@ -194,8 +194,10 @@ def handle_request(env, request_id, driver_pools, driver_counters, stats, result
         driver_id = f"DRV-{vt_code}-{driver_num:02d}"
         base_record["driver_id"] = driver_id
 
-        wait_time = random.choice(stats["vtat_samples"]) if stats["vtat_samples"] else stats["avg_vtat"]
-        yield env.timeout(wait_time)
+        queue_delay = env.now - request_time_min
+        vtat = random.choice(stats["vtat_samples"]) if stats["vtat_samples"] else stats["avg_vtat"]
+        yield env.timeout(vtat)
+        wait_time = queue_delay + vtat
 
         if random.random() < stats["p_customer_cancel"]:
             results.append({**base_record, "status": "Cancelled by Customer",

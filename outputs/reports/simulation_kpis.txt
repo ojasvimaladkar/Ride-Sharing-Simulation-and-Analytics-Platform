@@ -6,8 +6,8 @@ driver_cancellation_rate_pct: 16.03
 customer_cancellation_rate_pct: 6.11
 no_driver_found_rate_pct: 5.85
 incomplete_rate_pct: 8.14
-avg_wait_time_min: 8.30
+avg_wait_time_min: 9.37
 avg_trip_duration_min: 29.53
 avg_trip_distance_km: 23.57
-driver_utilization_pct: 31.75
-avg_driver_idle_time_min: 982.85
+driver_utilization_pct: 32.84
+avg_driver_idle_time_min: 967.06

@@ -9,6 +9,11 @@ const runScenariosBtn = document.getElementById("runScenariosBtn");
 const downloadBtn = document.getElementById("downloadBtn");
 const loadingOverlay = document.getElementById("loadingOverlay");
 
+const INK = "#dde1e6";
+const GRID = "#262b33";
+const AMBER = "#f2a93b";
+const TEAL = "#3fc1b0";
+
 let outcomeChart, hourlyChart, scenarioChart;
 let lastSample = [];
 
@@ -16,7 +21,7 @@ numDriversInput.addEventListener("input", () => {
   numDriversVal.textContent = numDriversInput.value;
 });
 demandInput.addEventListener("input", () => {
-  demandVal.textContent = parseFloat(demandInput.value).toFixed(1) + "x";
+  demandVal.textContent = parseFloat(demandInput.value).toFixed(1) + "×";
 });
 
 function showLoading(show) {
@@ -49,7 +54,7 @@ async function runSimulation() {
     lastSample = data.sample;
     downloadBtn.disabled = false;
 
-    document.getElementById("kpiSection").style.display = "grid";
+    document.getElementById("tickerSection").style.display = "flex";
     document.getElementById("chartsSection").style.display = "grid";
     document.getElementById("tableSection").style.display = "block";
   } catch (err) {
@@ -81,14 +86,14 @@ function renderOutcomeChart(outcomeCounts) {
     type: "bar",
     data: {
       labels,
-      datasets: [{ label: "Rides", data: values, backgroundColor: "#4C72B0" }],
+      datasets: [{ label: "Rides", data: values, backgroundColor: AMBER, borderRadius: 2 }],
     },
     options: {
       responsive: true,
       plugins: { legend: { display: false } },
       scales: {
-        x: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
-        y: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
+        x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
+        y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
       },
     },
   });
@@ -107,18 +112,19 @@ function renderHourlyChart(hourly) {
       datasets: [{
         label: "Requests",
         data: values,
-        borderColor: "#DD8452",
-        backgroundColor: "rgba(221,132,82,0.2)",
+        borderColor: TEAL,
+        backgroundColor: "rgba(63,193,176,0.12)",
         tension: 0.3,
         fill: true,
+        pointRadius: 0,
       }],
     },
     options: {
       responsive: true,
       plugins: { legend: { display: false } },
       scales: {
-        x: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
-        y: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
+        x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 10 } }, grid: { color: GRID } },
+        y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
       },
     },
   });
@@ -136,6 +142,7 @@ function renderTable(sample) {
   ).join("");
 }
 
+// ---------- Scenario comparison ----------
 async function runScenarios() {
   showLoading(true);
   try {
@@ -151,10 +158,10 @@ async function runScenarios() {
     tbody.innerHTML = results.map((r) => `
       <tr>
         <td>${r.scenario}</td>
-        <td>${r.completion_rate_pct ?? "-"}</td>
-        <td>${r.no_driver_found_rate_pct ?? "-"}</td>
-        <td>${r.driver_utilization_pct ?? "-"}</td>
-        <td>${r.avg_wait_time_min ?? "-"}</td>
+        <td>${r.completion_rate_pct ?? "-"}%</td>
+        <td>${r.no_driver_found_rate_pct ?? "-"}%</td>
+        <td>${r.driver_utilization_pct ?? "-"}%</td>
+        <td>${r.avg_wait_time_min ?? "-"} min</td>
       </tr>
     `).join("");
 
@@ -167,15 +174,16 @@ async function runScenarios() {
         datasets: [{
           label: "Completion Rate (%)",
           data: results.map((r) => r.completion_rate_pct),
-          backgroundColor: "#55A868",
+          backgroundColor: TEAL,
+          borderRadius: 2,
         }],
       },
       options: {
         responsive: true,
         plugins: { legend: { display: false } },
         scales: {
-          x: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
-          y: { ticks: { color: "#e2e8f0" }, grid: { color: "#334155" } },
+          x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 10 } }, grid: { color: GRID } },
+          y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
         },
       },
     });
@@ -189,6 +197,7 @@ async function runScenarios() {
   }
 }
 
+// ---------- CSV download ----------
 function downloadCsv() {
   if (!lastSample.length) return;
   const columns = Object.keys(lastSample[0]);

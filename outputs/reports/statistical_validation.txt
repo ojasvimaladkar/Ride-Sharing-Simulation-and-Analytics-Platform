@@ -1,6 +1,6 @@
 Statistical Validation -- Kolmogorov-Smirnov Test
 ==================================================
-wait_time_vs_VTAT: D=0.0251, p=0.96985 -> strong match
+wait_time_vs_VTAT: D=0.0862, p=0.007752 -> strong match
 trip_duration_vs_CTAT: D=0.0571, p=0.305726 -> strong match
 distance_vs_RideDistance: D=0.0469, p=0.549336 -> strong match
 
