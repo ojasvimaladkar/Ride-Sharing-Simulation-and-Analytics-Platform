@@ -1,0 +1,703 @@
+ride_id,rider_id,driver_id,request_time_min,hour,vehicle_type,pickup_location,drop_location,status,wait_time,trip_duration,distance
+2,RIDER-00002,DRV-PRE-01,9.81,0,Premier Sedan,Tis Hazari,Sultanpur,Cancelled by Customer,6.298500863867926,,
+3,RIDER-00003,DRV-BIK-01,20.4,0,Bike,Govindpuri,Lajpat Nagar,Completed,5.803115016084706,15.5,5.31
+1,RIDER-00001,DRV-GOM-01,9.57,0,Go Mini,Uttam Nagar,Tagore Garden,Completed,7.300849702805427,38.6,2.64
+4,RIDER-00004,DRV-BIK-02,28.13,0,Bike,Pragati Maidan,Gurgaon Sector 29,Completed,11.402660499274516,21.4,9.48
+8,RIDER-00008,DRV-PRE-02,56.9,0,Premier Sedan,Mehrauli,Gurgaon Sector 29,Cancelled by Driver,8.895796342383585,,
+5,RIDER-00005,DRV-GOM-02,43.51,0,Go Mini,IIT Delhi,AIIMS,Completed,5.500473095042942,28.2,40.62
+6,RIDER-00006,DRV-UBE-01,47.68,0,Uber XL,Huda City Centre,IMT Manesar,Completed,9.802869753786975,23.3,9.84
+7,RIDER-00007,DRV-AUT-01,54.89,0,Auto,Subhash Nagar,Chirag Delhi,Completed,9.202131176288457,30.5,39.57
+9,RIDER-00009,DRV-AUT-02,75.03,1,Auto,Mehrauli,Saket A Block,Completed,5.004441272199898,23.2,27.97
+12,RIDER-00012,DRV-GOS-02,94.53,1,Go Sedan,Chirag Delhi,Greater Kailash,Cancelled by Driver,12.79777043028459,,
+14,RIDER-00014,DRV-UBE-01,104.16,1,Uber XL,Janakpuri,Gwal Pahari,Cancelled by Driver,8.503016968903395,,
+13,RIDER-00013,DRV-AUT-04,97.42,1,Auto,Patel Chowk,Shahdara,Cancelled by Customer,17.3144412721999,,
+11,RIDER-00011,DRV-GOS-01,92.26,1,Go Sedan,Pulbangash,Golf Course Road,Completed,2.0033879890880826,39.4,8.08
+10,RIDER-00010,DRV-AUT-03,87.41,1,Auto,Netaji Subhash Place,Shastri Park,Completed,16.482131176288465,38.1,43.47
+18,RIDER-00018,DRV-PRE-01,140.11,2,Premier Sedan,Punjabi Bagh,Old Gurgaon,Cancelled by Driver,4.2026328081696365,,
+15,RIDER-00015,DRV-BIK-03,108.72,1,Bike,Pulbangash,Chanakyapuri,Completed,7.095895966252035,38.4,10.1
+16,RIDER-00016,DRV-EBI-01,129.19,2,eBike,Subhash Chowk,Greater Noida,Completed,6.495436430895637,28.9,26.05
+20,RIDER-00020,DRV-BIK-01,156.97,2,Bike,India Gate,Sarojini Nagar,Cancelled by Customer,13.30433854168884,,
+19,RIDER-00019,DRV-UBE-01,140.69,2,Uber XL,Ashok Park Main,Udyog Vihar Phase 4,Completed,10.49671592803017,21.7,13.26
+21,RIDER-00021,DRV-AUT-02,168.24,2,Auto,Uttam Nagar,Anand Vihar,Cancelled by Driver,6.598037587998055,,
+17,RIDER-00017,DRV-AUT-01,131.08,2,Auto,Karol Bagh,Sikanderpur,Incomplete,6.698904105723625,41.2,13.66
+24,RIDER-00024,DRV-GOS-03,188.41,3,Go Sedan,Gurgaon Sector 56,New Colony,Cancelled by Customer,7.901052970288157,,
+25,RIDER-00025,DRV-GOM-03,191.0,3,Go Mini,Saket,Pragati Maidan,Completed,6.2041819661278454,15.4,32.82
+22,RIDER-00022,DRV-AUT-03,175.25,2,Auto,Vinobapuri,Noida Sector 18,Completed,8.500997669586866,30.2,46.43
+27,RIDER-00027,DRV-PRE-02,210.53,3,Premier Sedan,Okhla,Kherki Daula Toll,Cancelled by Driver,6.296645872491825,,
+26,RIDER-00026,DRV-AUT-04,191.95,3,Auto,Kirti Nagar,Dwarka Mor,Completed,10.80388160749239,23.8,6.33
+23,RIDER-00023,DRV-EBI-01,187.09,3,eBike,South Extension,Paschim Vihar,Completed,13.199071112839174,32.9,13.73
+29,RIDER-00029,DRV-EBI-01,232.09,3,eBike,Indirapuram,Model Town,Cancelled by Driver,8.69907111283917,,
+31,RIDER-00031,,239.18,3,Auto,Chirag Delhi,Arjangarh,No Driver Found,,,
+30,RIDER-00030,DRV-AUT-02,237.21,3,Auto,Madipur,Indirapuram,Completed,3.0047809440349624,15.0,12.92
+28,RIDER-00028,DRV-AUT-01,225.9,3,Auto,India Gate,Madipur,Completed,3.8995476627194647,26.4,6.52
+34,RIDER-00034,DRV-GOS-02,255.26,4,Go Sedan,ITO,Shastri Park,Completed,12.10452242928597,17.7,7.98
+36,RIDER-00036,,271.43,4,Premier Sedan,DLF Phase 3,Ashram,No Driver Found,,,
+33,RIDER-00033,DRV-PRE-01,254.02,4,Premier Sedan,Bahadurgarh,Indirapuram,Completed,3.499151608919533,35.0,13.56
+35,RIDER-00035,DRV-GOM-01,260.56,4,Go Mini,IFFCO Chowk,Mansarovar Park,Completed,17.603662364215076,21.0,47.77
+32,RIDER-00032,DRV-GOS-01,252.01,4,Go Sedan,Hauz Khas,Karol Bagh,Completed,10.80434249827589,39.4,3.79
+37,RIDER-00037,DRV-BIK-02,292.17,4,Bike,Khandsa,Kadarpur,Completed,6.102614058977258,42.1,39.32
+39,RIDER-00039,DRV-PRE-02,335.48,5,Premier Sedan,RK Puram,Maidan Garhi,Cancelled by Customer,7.2011610435817035,,
+42,RIDER-00042,DRV-GOS-03,349.56,5,Go Sedan,Seelampur,Faridabad Sector 15,Cancelled by Customer,3.0980435390433514,,
+45,RIDER-00045,DRV-PRE-01,365.27,6,Premier Sedan,Ashram,Punjabi Bagh,Cancelled by Driver,3.604207341647941,,
+38,RIDER-00038,DRV-GOM-02,334.7,5,Go Mini,Tughlakabad,Chanakyapuri,Completed,10.699948236363195,26.1,44.27
+41,RIDER-00041,DRV-AUT-04,349.51,5,Auto,Noida Extension,Kalkaji,Completed,14.003113652472734,17.2,45.59
+40,RIDER-00040,DRV-AUT-03,340.86,5,Auto,Saket,Mayur Vihar,Completed,3.9994815372403423,38.2,3.38
+48,RIDER-00048,DRV-UBE-01,384.48,6,Uber XL,Connaught Place,Qutub Minar,Cancelled by Driver,2.302260698977011,,
+43,RIDER-00043,DRV-EBI-01,357.88,5,eBike,Udyog Bhawan,Panchsheel Park,Completed,9.698204993905573,29.5,35.17
+44,RIDER-00044,DRV-BIK-03,359.98,5,Bike,Saidulajab,Ashok Park Main,Completed,5.995548396924335,34.2,21.61
+47,RIDER-00047,DRV-GOM-03,382.91,6,Go Mini,Vinobapuri,Gurgaon Sector 29,Completed,3.6982843367761804,16.0,39.61
+46,RIDER-00046,DRV-AUT-01,376.85,6,Auto,Golf Course Road,Tilak Nagar,Completed,5.3007455779320365,31.6,40.53
+54,RIDER-00054,DRV-PRE-02,407.57,6,Premier Sedan,Chandni Chowk,Welcome,Cancelled by Driver,11.899644039345015,,
+49,RIDER-00049,DRV-UBE-01,386.06,6,Uber XL,Aya Nagar,Indirapuram,Incomplete,14.122260698977039,19.8,20.07
+56,RIDER-00056,,410.24,6,eBike,Moti Nagar,Seelampur,No Driver Found,,,
+53,RIDER-00053,DRV-EBI-01,405.88,6,eBike,Paschim Vihar,Ramesh Nagar,Completed,4.500392826441953,18.4,6.96
+50,RIDER-00050,DRV-GOM-01,386.44,6,Go Mini,Sadar Bazar Gurgaon,Rajouri Garden,Completed,3.7019998197673774,41.6,31.29
+52,RIDER-00052,DRV-BIK-01,404.66,6,Bike,Preet Vihar,Udyog Vihar Phase 4,Completed,2.597818584605227,26.0,24.94
+60,RIDER-00060,DRV-EBI-01,430.76,7,eBike,Mundka,Vasant Kunj,Cancelled by Driver,7.69772313842891,,
+51,RIDER-00051,DRV-GOS-01,396.61,6,Go Sedan,Udyog Vihar,ITO,Incomplete,2.5026479754841375,43.9,19.54
+61,RIDER-00061,DRV-UBE-01,432.68,7,Uber XL,Badshahpur,Nawada,Completed,4.504407708049655,15.7,13.23
+63,RIDER-00063,,438.29,7,Go Sedan,Subhash Chowk,Vaishali,No Driver Found,,,
+55,RIDER-00055,DRV-GOM-02,408.3,6,Go Mini,Karkarduma,Udyog Vihar,Completed,14.400326164938372,33.5,11.91
+69,RIDER-00069,,446.83,7,Bike,Nehru Place,Indraprastha,No Driver Found,,,
+57,RIDER-00057,DRV-BIK-02,415.13,6,Bike,Hauz Khas,Chandni Chowk,Completed,9.095687603521105,39.4,24.11
+71,RIDER-00071,,449.82,7,Go Mini,Sonipat,Model Town,No Driver Found,,,
+72,RIDER-00072,,449.89,7,Bike,Nirman Vihar,Subhash Nagar,No Driver Found,,,
+73,RIDER-00073,,449.95,7,Go Mini,Vishwavidyalaya,Pitampura,No Driver Found,,,
+74,RIDER-00074,,450.43,7,Go Mini,Mehrauli,Gurgaon Sector 29,No Driver Found,,,
+75,RIDER-00075,,451.86,7,Bike,Malviya Nagar,Tilak Nagar,No Driver Found,,,
+76,RIDER-00076,,453.36,7,eBike,Udyog Bhawan,Cyber Hub,No Driver Found,,,
+58,RIDER-00058,DRV-GOS-02,420.41,7,Go Sedan,Kashmere Gate,Vasant Kunj,Completed,9.198932637819109,39.1,49.7
+59,RIDER-00059,DRV-PRE-01,430.17,7,Premier Sedan,Saket A Block,Subhash Nagar,Completed,5.803935701532271,33.1,39.35
+79,RIDER-00079,DRV-AUT-04,462.8,7,Auto,Vaishali,Chandni Chowk,Cancelled by Driver,8.403779202637645,,
+78,RIDER-00078,,460.59,7,Bike,Faridabad Sector 15,RK Puram,No Driver Found,,,
+67,RIDER-00067,DRV-BIK-03,444.14,7,Bike,AIIMS,Paschim Vihar,Completed,4.5960083789221695,28.3,49.14
+65,RIDER-00065,DRV-AUT-02,442.52,7,Auto,Adarsh Nagar,Pitampura,Completed,12.297200829886595,23.2,1.9
+81,RIDER-00081,DRV-BIK-02,471.8,7,Bike,Golf Course Road,Hauz Rani,Cancelled by Driver,8.03600837892218,,
+64,RIDER-00064,DRV-GOM-03,441.72,7,Go Mini,Hauz Rani,Sikanderpur,Completed,18.301823917679872,23.6,16.67
+68,RIDER-00068,DRV-EBI-01,445.3,7,eBike,Sikanderpur,Azadpur,Completed,6.302367171718902,32.7,5.37
+62,RIDER-00062,DRV-GOS-03,435.29,7,Go Sedan,Welcome,Paharganj,Completed,13.222647975484108,37.3,14.71
+77,RIDER-00077,DRV-AUT-03,453.53,7,Auto,AIIMS,Rajiv Chowk,Completed,9.501859212131478,33.7,24.15
+82,RIDER-00082,DRV-GOS-02,479.46,7,Go Sedan,Sarai Kale Khan,IFFCO Chowk,Cancelled by Driver,17.45264797548416,,
+70,RIDER-00070,DRV-BIK-01,448.66,7,Bike,Barakhamba Road,Basai Dhankot,Completed,21.765687603521076,29.2,40.92
+66,RIDER-00066,DRV-GOM-01,442.87,7,Go Mini,Narsinghpur,Raj Nagar Extension,Incomplete,26.530326164938355,33.5,7.78
+87,RIDER-00087,,490.09,8,Go Sedan,Ghitorni Village,Saket,No Driver Found,,,
+89,RIDER-00089,,492.69,8,Go Mini,Preet Vihar,Ambience Mall,No Driver Found,,,
+90,RIDER-00090,,494.74,8,Go Sedan,Kashmere Gate ISBT,Gwal Pahari,No Driver Found,,,
+88,RIDER-00088,DRV-GOM-03,492.03,8,Go Mini,Sohna Road,Bahadurgarh,Cancelled by Customer,18.270326164938375,,
+92,RIDER-00092,DRV-AUT-02,498.1,8,Auto,Vidhan Sabha,Ghitorni Village,Cancelled by Customer,14.501054300101487,,
+83,RIDER-00083,DRV-AUT-01,483.59,8,Auto,Ghaziabad,Shastri Nagar,Completed,11.598900780894303,17.8,22.12
+84,RIDER-00084,DRV-PRE-02,487.6,8,Premier Sedan,Pragati Maidan,Gurgaon Sector 29,Completed,6.5956485826012905,21.0,18.09
+80,RIDER-00080,DRV-GOS-01,470.71,7,Go Sedan,Pragati Maidan,Inderlok,Incomplete,5.999196905025826,38.5,21.53
+97,RIDER-00097,,503.61,8,eBike,Greater Noida,Noida Sector 62,No Driver Found,,,
+102,RIDER-00102,DRV-PRE-02,512.8,8,Premier Sedan,Subhash Chowk,Kashmere Gate ISBT,Cancelled by Driver,7.095648582601325,,
+95,RIDER-00095,DRV-AUT-03,502.27,8,Auto,Pataudi Chowk,Noida Film City,Completed,6.398481808967086,21.5,29.53
+91,RIDER-00091,DRV-EBI-01,495.55,8,eBike,MG Road,Green Park,Completed,2.1008393896543454,32.9,43.51
+103,RIDER-00103,,517.64,8,Go Sedan,Rohini West,Manesar,No Driver Found,,,
+104,RIDER-00104,,518.72,8,Go Sedan,Hero Honda Chowk,Samaypur Badli,No Driver Found,,,
+99,RIDER-00099,DRV-GOM-01,506.98,8,Go Mini,Greater Kailash,Greater Noida,Completed,5.420326164938308,24.3,46.83
+93,RIDER-00093,DRV-PRE-01,500.41,8,Premier Sedan,Samaypur Badli,Preet Vihar,Completed,8.20252654409337,28.7,10.64
+86,RIDER-00086,DRV-GOM-02,489.57,8,Go Mini,Indirapuram,Vaishali,Incomplete,6.496904810675403,42.7,17.43
+105,RIDER-00105,,524.09,8,Bike,Dilshad Garden,Sushant Lok,No Driver Found,,,
+85,RIDER-00085,DRV-GOS-03,488.04,8,Go Sedan,Jasola,Old Gurgaon,Completed,19.672647975484143,33.2,15.34
+100,RIDER-00100,DRV-AUT-01,509.79,8,Auto,Dilshad Garden,Lok Kalyan Marg,Completed,12.298900780894234,19.5,31.34
+98,RIDER-00098,DRV-BIK-03,506.74,8,Bike,Chandni Chowk,Rajouri Garden,Completed,8.302010508929175,32.2,39.71
+101,RIDER-00101,DRV-BIK-01,511.81,8,Bike,Panchsheel Park,Badshahpur,Completed,10.703250881300061,25.3,16.93
+107,RIDER-00107,DRV-GOM-03,527.08,8,Go Mini,Samaypur Badli,Saket,Cancelled by Driver,22.1869048106754,,
+94,RIDER-00094,DRV-GOS-01,500.67,8,Go Sedan,Lok Kalyan Marg,Chanakyapuri,Completed,16.73919690502579,42.5,10.71
+106,RIDER-00106,DRV-GOM-02,525.7,8,Go Mini,Akshardham,Yamuna Bank,Completed,21.600326164938203,16.2,49.71
+114,RIDER-00114,,549.56,9,Bike,Shivaji Park,Saket A Block,No Driver Found,,,
+117,RIDER-00117,,552.44,9,Auto,Vinobapuri,Mayur Vihar,No Driver Found,,,
+96,RIDER-00096,DRV-AUT-04,502.65,8,Auto,Rohini East,Sonipat,Incomplete,20.951054300101532,44.2,17.14
+119,RIDER-00119,,555.07,9,Bike,Noida Extension,Paharganj,No Driver Found,,,
+120,RIDER-00120,,556.43,9,Go Sedan,Sarai Kale Khan,New Colony,No Driver Found,,,
+123,RIDER-00123,DRV-PRE-02,561.78,9,Premier Sedan,Adarsh Nagar,Botanical Garden,Cancelled by Driver,10.59841014883873,,
+122,RIDER-00122,,560.69,9,Go Sedan,Okhla,Samaypur Badli,No Driver Found,,,
+124,RIDER-00124,,562.02,9,Go Mini,Bhiwadi,Shivaji Park,No Driver Found,,,
+111,RIDER-00111,DRV-BIK-03,545.38,9,Bike,Subhash Chowk,Jor Bagh,Completed,15.333250881300069,16.4,15.08
+112,RIDER-00112,DRV-AUT-02,546.08,9,Auto,Welcome,Civil Lines Gurgaon,Incomplete,11.79972624565885,20.5,23.01
+110,RIDER-00110,DRV-GOM-01,544.15,9,Go Mini,Jasola,Moolchand,Completed,11.016904810675465,23.4,14.46
+108,RIDER-00108,DRV-BIK-02,537.95,8,Bike,IMT Manesar,Model Town,Completed,18.992010508929138,25.3,13.11
+126,RIDER-00126,,567.39,9,Premier Sedan,Tagore Garden,Sikanderpur,No Driver Found,,,
+109,RIDER-00109,DRV-PRE-01,538.7,8,Premier Sedan,Welcome,Adarsh Nagar,Completed,2.500879913383187,42.2,31.49
+128,RIDER-00128,DRV-GOM-03,569.36,9,Go Mini,Okhla,Rithala,Cancelled by Customer,18.706904810675383,,
+131,RIDER-00131,,573.95,9,Go Sedan,Rajiv Chowk,Badarpur,No Driver Found,,,
+135,RIDER-00135,DRV-BIK-02,580.25,9,Bike,AIIMS,Seelampur,Cancelled by Driver,9.792010508929184,,
+132,RIDER-00132,,575.14,9,Go Sedan,Chirag Delhi,Noida Extension,No Driver Found,,,
+118,RIDER-00118,DRV-AUT-04,554.58,9,Auto,Sikanderpur,Kashmere Gate ISBT,Completed,21.921054300101513,15.8,37.58
+134,RIDER-00134,,578.65,9,Go Mini,Moolchand,Vasant Kunj,No Driver Found,,,
+113,RIDER-00113,DRV-GOS-02,548.31,9,Go Sedan,Noida Sector 18,Rohini,Completed,5.402433143965391,41.5,39.66
+127,RIDER-00127,DRV-BIK-01,568.94,9,Bike,IMT Manesar,Chirag Delhi,Incomplete,10.373250881299963,16.0,39.47
+139,RIDER-00139,DRV-BIK-01,587.05,9,Bike,Kherki Daula Toll,Samaypur Badli,Cancelled by Customer,13.16325088130011,,
+138,RIDER-00138,,585.36,9,Premier Sedan,Subhash Chowk,Mehrauli,No Driver Found,,,
+130,RIDER-00130,DRV-GOM-01,573.41,9,Go Mini,Seelampur,IFFCO Chowk,Cancelled by Customer,28.75690481067543,,
+116,RIDER-00116,DRV-AUT-03,551.48,9,Auto,Jasola,Vatika Chowk,Completed,6.904144363728415,44.3,33.86
+141,RIDER-00141,,591.32,9,Premier Sedan,Tilak Nagar,Ambience Mall,No Driver Found,,,
+121,RIDER-00121,DRV-GOM-02,557.65,9,Go Mini,Hauz Rani,Bhikaji Cama Place,Completed,16.45032616493834,36.2,11.96
+144,RIDER-00144,,596.74,9,Premier Sedan,Laxmi Nagar,Nehru Place,No Driver Found,,,
+125,RIDER-00125,DRV-PRE-01,564.4,9,Premier Sedan,Mehrauli,Nawada,Completed,20.378410148838746,28.1,41.03
+137,RIDER-00137,DRV-BIK-03,581.59,9,Bike,IMT Manesar,Chirag Delhi,Completed,15.152010508929106,20.3,40.22
+147,RIDER-00147,DRV-AUT-04,602.59,10,Auto,Ghitorni,Ghaziabad,Cancelled by Driver,14.794144363728332,,
+152,RIDER-00152,DRV-PRE-01,612.49,10,Premier Sedan,Preet Vihar,India Gate,Cancelled by Driver,8.388410148838716,,
+133,RIDER-00133,DRV-PRE-02,576.93,9,Premier Sedan,Narsinghpur,DLF City Court,Completed,14.670879913383327,29.9,19.1
+115,RIDER-00115,DRV-GOS-03,550.64,9,Go Sedan,Panchsheel Park,IFFCO Chowk,Completed,28.869196905025866,44.7,5.67
+160,RIDER-00160,DRV-BIK-03,618.31,10,Bike,Mayur Vihar,Madipur,Cancelled by Customer,7.002638166068323,,
+149,RIDER-00149,,610.32,10,eBike,Kaushambi,Panchsheel Park,No Driver Found,,,
+142,RIDER-00142,DRV-AUT-03,593.74,9,Auto,Uttam Nagar,Khandsa,Completed,9.559999999999992,22.1,23.78
+154,RIDER-00154,,613.98,10,Uber XL,New Colony,Sikanderpur,No Driver Found,,,
+156,RIDER-00156,,614.81,10,Go Mini,Ghitorni,Kashmere Gate ISBT,No Driver Found,,,
+153,RIDER-00153,DRV-PRE-02,612.79,10,Premier Sedan,Mandi House,Qutub Minar,Cancelled by Customer,18.188410148838763,,
+136,RIDER-00136,DRV-AUT-02,580.8,9,Auto,Lal Quila,Kherki Daula Toll,Completed,17.4010543001016,32.9,48.55
+161,RIDER-00161,,618.8,10,Go Mini,Sadar Bazar Gurgaon,Maidan Garhi,No Driver Found,,,
+129,RIDER-00129,DRV-AUT-01,571.5,9,Auto,Sultanpur,Greater Noida,Completed,20.379726245658844,42.8,16.19
+145,RIDER-00145,DRV-GOS-01,598.12,9,Go Sedan,Rajouri Garden,Ashok Park Main,Completed,8.596731006065147,29.6,44.1
+150,RIDER-00150,DRV-GOM-01,610.94,10,Go Mini,Mundka,Vasant Kunj,Completed,8.899338087150477,17.8,37.96
+165,RIDER-00165,,624.47,10,Auto,Badarpur,Rajiv Nagar,No Driver Found,,,
+166,RIDER-00166,,625.1,10,Auto,Udyog Vihar Phase 4,Mehrauli,No Driver Found,,,
+168,RIDER-00168,,627.06,10,eBike,Malviya Nagar,DLF City Court,No Driver Found,,,
+163,RIDER-00163,DRV-GOS-01,622.64,10,Go Sedan,Nehru Place,Faridabad Sector 15,Cancelled by Driver,20.17673100606521,,
+146,RIDER-00146,DRV-EBI-01,599.87,9,eBike,Rohini West,Patel Chowk,Completed,9.504368508530433,33.7,42.02
+170,RIDER-00170,,628.12,10,Go Mini,Akshardham,Rohini East,No Driver Found,,,
+151,RIDER-00151,DRV-BIK-02,611.02,10,Bike,Badshahpur,Narsinghpur,Completed,11.903356231111411,23.4,39.66
+143,RIDER-00143,DRV-UBE-01,594.73,9,Uber XL,Indirapuram,Jama Masjid,Completed,11.797083853772893,40.2,48.4
+172,RIDER-00172,,632.93,10,Go Mini,Kherki Daula Toll,MG Road,No Driver Found,,,
+173,RIDER-00173,,632.97,10,Auto,Civil Lines Gurgaon,Tughlakabad,No Driver Found,,,
+174,RIDER-00174,,633.55,10,Auto,Peeragarhi,Cyber Hub,No Driver Found,,,
+175,RIDER-00175,,634.99,10,Go Mini,Pragati Maidan,Palam Vihar,No Driver Found,,,
+178,RIDER-00178,DRV-BIK-03,638.83,10,Bike,Tagore Garden,Peeragarhi,Cancelled by Driver,11.993356231111306,,
+177,RIDER-00177,,635.94,10,Auto,Rajouri Garden,Kherki Daula Toll,No Driver Found,,,
+157,RIDER-00157,DRV-AUT-02,615.0,10,Auto,Malviya Nagar,Udyog Vihar Phase 4,Completed,13.999999999999977,22.5,46.51
+158,RIDER-00158,DRV-GOS-02,615.52,10,Go Sedan,IGI Airport,Bhikaji Cama Place,Completed,7.60325514149722,31.7,49.14
+180,RIDER-00180,,640.75,10,Auto,Karkarduma,Tagore Garden,No Driver Found,,,
+181,RIDER-00181,,640.83,10,Go Mini,Qutub Minar,Gurgaon Sector 56,No Driver Found,,,
+140,RIDER-00140,DRV-GOM-02,590.7,9,Go Mini,Anand Vihar ISBT,Civil Lines Gurgaon,Completed,20.799999999999955,44.4,39.96
+171,RIDER-00171,DRV-GOS-02,630.63,10,Go Sedan,Pulbangash,Kirti Nagar,Cancelled by Driver,25.6867310060652,,
+162,RIDER-00162,DRV-GOS-03,621.32,10,Go Sedan,Vishwavidyalaya,Jahangirpuri,Completed,6.3891969050258695,30.0,5.59
+182,RIDER-00182,,642.77,10,Auto,Kalkaji,Sarojini Nagar,No Driver Found,,,
+155,RIDER-00155,DRV-AUT-01,614.42,10,Auto,Subhash Nagar,Punjabi Bagh,Completed,11.66414436372845,32.5,20.49
+167,RIDER-00167,DRV-GOM-02,625.22,10,Go Mini,New Colony,Kirti Nagar,Completed,18.619338087150435,15.9,13.22
+148,RIDER-00148,DRV-GOM-03,609.99,10,Go Mini,Ghitorni,Nirman Vihar,Completed,13.804002828314129,37.2,11.35
+185,RIDER-00185,DRV-GOS-01,646.8,10,Go Sedan,Noida Film City,Chandni Chowk,Cancelled by Customer,14.816731006065243,,
+169,RIDER-00169,DRV-BIK-01,627.8,10,Bike,Uttam Nagar,Nehru Place,Completed,9.800399530271239,25.1,45.88
+186,RIDER-00186,,647.99,10,Auto,Moti Nagar,Botanical Garden,No Driver Found,,,
+183,RIDER-00183,DRV-AUT-02,643.8,10,Auto,IFFCO Chowk,Paschim Vihar,Cancelled by Customer,20.9841443637285,,
+187,RIDER-00187,,649.84,10,Auto,Shivaji Park,Green Park,No Driver Found,,,
+164,RIDER-00164,DRV-AUT-04,623.66,10,Auto,Khan Market,Vasant Kunj,Completed,20.81972624565883,28.7,18.49
+159,RIDER-00159,DRV-AUT-03,617.34,10,Auto,Chanakyapuri,Indraprastha,Completed,18.761054300101478,37.4,17.33
+192,RIDER-00192,DRV-UBE-01,658.78,10,Uber XL,Noida Sector 18,Connaught Place,Cancelled by Driver,14.79812605277657,,
+191,RIDER-00191,DRV-PRE-02,657.44,10,Premier Sedan,Green Park,GTB Nagar,Completed,2.395677984297572,17.6,28.65
+176,RIDER-00176,DRV-BIK-02,635.32,10,Bike,Netaji Subhash Place,Rajouri Garden,Completed,7.195725537910971,35.8,2.38
+200,RIDER-00200,DRV-UBE-01,671.39,11,Uber XL,Adarsh Nagar,Botanical Garden,Cancelled by Customer,12.38812605277651,,
+184,RIDER-00184,DRV-GOS-03,644.63,10,Go Sedan,Shahdara,Barakhamba Road,Completed,21.793255141497276,18.7,9.69
+190,RIDER-00190,DRV-PRE-01,655.9,10,Premier Sedan,Pulbangash,Rithala,Completed,3.098212553351664,26.5,5.95
+195,RIDER-00195,DRV-GOS-02,664.68,11,Go Sedan,Rohini East,Dwarka Mor,Completed,5.4032833680645584,16.4,12.66
+199,RIDER-00199,DRV-GOM-02,671.36,11,Go Mini,Karkarduma,Chanakyapuri,Completed,3.7030783970108816,12.3,5.45
+201,RIDER-00201,DRV-PRE-01,671.72,11,Premier Sedan,RK Puram,Sikanderpur,Cancelled by Driver,16.2156779842976,,
+188,RIDER-00188,DRV-GOM-03,650.8,10,Go Mini,Kaushambi,Anand Vihar ISBT,Incomplete,11.500000000000023,27.8,20.01
+189,RIDER-00189,DRV-BIK-01,653.98,10,Bike,Aya Nagar,Subhash Chowk,Completed,4.197341918178677,32.5,14.54
+196,RIDER-00196,DRV-BIK-02,665.32,11,Bike,Chhatarpur,Gwal Pahari,Completed,9.997488941806182,18.2,26.52
+205,RIDER-00205,,682.16,11,Premier Sedan,New Delhi Railway Station,Gwal Pahari,No Driver Found,,,
+207,RIDER-00207,DRV-EBI-01,685.77,11,eBike,Seelampur,Kashmere Gate,Cancelled by Customer,13.00220506351286,,
+204,RIDER-00204,DRV-PRE-01,676.99,11,Premier Sedan,Ardee City,Aya Nagar,Cancelled by Customer,21.845677984297616,,
+194,RIDER-00194,DRV-GOM-01,661.16,11,Go Mini,Greater Noida,Moti Nagar,Completed,7.301147758901993,33.8,21.0
+197,RIDER-00197,DRV-GOS-03,665.47,11,Go Sedan,Civil Lines Gurgaon,Tilak Nagar,Incomplete,5.599919221594382,31.6,26.45
+193,RIDER-00193,DRV-AUT-03,660.17,11,Auto,Jama Masjid,Delhi Gate,Completed,26.00972624565884,18.6,28.29
+179,RIDER-00179,DRV-AUT-01,639.28,10,Auto,Noida Film City,Vatika Chowk,Incomplete,22.920000000000027,43.8,17.02
+198,RIDER-00198,DRV-BIK-03,666.09,11,Bike,Dwarka Sector 21,Civil Lines Gurgaon,Completed,26.42572553791099,17.5,41.56
+206,RIDER-00206,DRV-GOM-03,684.77,11,Go Mini,Cyber Hub,Moolchand,Completed,9.693078397010913,15.6,11.81
+212,RIDER-00212,DRV-EBI-01,696.65,11,eBike,Badshahpur,Ghaziabad,Cancelled by Driver,13.922205063512866,,
+203,RIDER-00203,DRV-AUT-04,675.02,11,Auto,Tilak Nagar,Khandsa,Completed,6.104824124218203,29.8,4.54
+202,RIDER-00202,DRV-PRE-02,672.26,11,Premier Sedan,Rohini,Model Town,Completed,16.338212553351674,27.3,2.41
+218,RIDER-00218,DRV-PRE-01,705.32,11,Premier Sedan,IGI Airport,Golf Course Road,Cancelled by Driver,12.978212553351591,,
+208,RIDER-00208,DRV-GOM-01,686.26,11,Go Mini,Noida Film City,Rohini West,Completed,15.939999999999918,17.4,31.03
+217,RIDER-00217,DRV-AUT-03,702.74,11,Auto,Lal Quila,Subhash Nagar,Cancelled by Customer,17.58482412421815,,
+220,RIDER-00220,,706.92,11,Go Sedan,Govindpuri,Bhikaji Cama Place,No Driver Found,,,
+221,RIDER-00221,,711.08,11,Go Sedan,Greater Noida,Keshav Puram,No Driver Found,,,
+211,RIDER-00211,DRV-PRE-02,695.81,11,Premier Sedan,Golf Course Road,Anand Vihar,Completed,5.925677984297659,28.0,43.1
+222,RIDER-00222,,715.04,11,Go Sedan,Rajiv Chowk,Kalkaji,No Driver Found,,,
+223,RIDER-00223,,715.17,11,Auto,Vishwavidyalaya,Model Town,No Driver Found,,,
+216,RIDER-00216,DRV-GOS-03,698.03,11,Go Sedan,RK Puram,Lok Kalyan Marg,Completed,12.239919221594482,22.0,25.65
+215,RIDER-00215,DRV-BIK-01,697.71,11,Bike,Indraprastha,Nirman Vihar,Completed,2.0044955869864225,33.6,2.24
+227,RIDER-00227,,719.94,11,Auto,Vinobapuri,Karol Bagh,No Driver Found,,,
+210,RIDER-00210,DRV-AUT-02,692.18,11,Auto,Dwarka Mor,Central Secretariat,Completed,28.12000000000005,15.5,19.64
+228,RIDER-00228,,722.28,12,eBike,Laxmi Nagar,Jor Bagh,No Driver Found,,,
+229,RIDER-00229,DRV-BIK-02,724.37,12,Bike,Bahadurgarh,Noida Film City,Cancelled by Driver,14.49664791630471,,
+230,RIDER-00230,,725.3,12,Go Sedan,Ramesh Nagar,Ashok Park Main,No Driver Found,,,
+231,RIDER-00231,,727.75,12,Go Sedan,Samaypur Badli,New Delhi Railway Station,No Driver Found,,,
+232,RIDER-00232,,728.19,12,Go Mini,Tis Hazari,Lal Quila,No Driver Found,,,
+226,RIDER-00226,DRV-GOM-03,718.24,11,Go Mini,Keshav Puram,Khandsa,Completed,9.695040176084557,15.5,33.56
+213,RIDER-00213,DRV-GOS-01,696.83,11,Go Sedan,Rajiv Nagar,Noida Extension,Completed,10.397998627373932,40.2,30.26
+234,RIDER-00234,,733.03,12,Go Mini,Uttam Nagar,Janakpuri,No Driver Found,,,
+214,RIDER-00214,DRV-GOS-02,696.85,11,Go Sedan,Rajiv Nagar,Rohini East,Incomplete,12.90344382470098,40.8,39.08
+209,RIDER-00209,DRV-AUT-01,690.35,11,Auto,Panchsheel Park,Paharganj,Completed,26.9297262456588,33.9,39.13
+237,RIDER-00237,,737.43,12,Go Mini,Pataudi Chowk,Peeragarhi,No Driver Found,,,
+238,RIDER-00238,,737.55,12,Go Mini,Kadarpur,Mansarovar Park,No Driver Found,,,
+239,RIDER-00239,,738.53,12,Go Mini,Kashmere Gate,Delhi Gate,No Driver Found,,,
+225,RIDER-00225,DRV-EBI-01,716.24,11,eBike,Inderlok,Kashmere Gate,Completed,6.602645573340828,36.3,2.4
+219,RIDER-00219,DRV-AUT-04,706.85,11,Auto,Udyog Bhawan,Shastri Park,Completed,20.274824124218117,34.9,33.29
+244,RIDER-00244,,747.15,12,Go Sedan,Arjangarh,Hauz Rani,No Driver Found,,,
+245,RIDER-00245,,749.03,12,Go Sedan,Mayur Vihar,IMT Manesar,No Driver Found,,,
+246,RIDER-00246,,752.43,12,Go Sedan,Pulbangash,IGNOU Road,No Driver Found,,,
+224,RIDER-00224,DRV-GOM-02,715.7,11,Go Mini,Basai Dhankot,Basai Dhankot,Completed,14.404526171148541,40.0,30.11
+249,RIDER-00249,DRV-PRE-02,758.19,12,Premier Sedan,India Gate,Civil Lines Gurgaon,Cancelled by Customer,12.098556072273459,,
+241,RIDER-00241,DRV-AUT-02,739.93,12,Auto,Saket A Block,Ashram,Completed,14.949726245658848,16.6,2.41
+235,RIDER-00235,DRV-AUT-01,733.38,12,Auto,Hero Honda Chowk,Punjabi Bagh,Completed,6.219999999999959,32.3,6.45
+248,RIDER-00248,,757.12,12,Go Sedan,Lajpat Nagar,Chanakyapuri,No Driver Found,,,
+236,RIDER-00236,DRV-UBE-01,736.27,12,Uber XL,New Colony,Ashok Vihar,Incomplete,3.2006342866201978,32.9,30.78
+247,RIDER-00247,DRV-AUT-03,756.47,12,Auto,Jama Masjid,Palam Vihar,Cancelled by Customer,17.354824124218045,,
+252,RIDER-00252,DRV-AUT-01,764.82,12,Auto,Keshav Puram,Sadar Bazar Gurgaon,Cancelled by Driver,11.979999999999814,,
+253,RIDER-00253,,765.21,12,Go Mini,AIIMS,Saket,No Driver Found,,,
+254,RIDER-00254,,766.48,12,Go Sedan,Rajiv Nagar,Netaji Subhash Place,No Driver Found,,,
+255,RIDER-00255,,771.82,12,Go Mini,IIT Delhi,Jama Masjid,No Driver Found,,,
+240,RIDER-00240,DRV-GOS-01,738.77,12,Go Sedan,DLF City Court,Lok Kalyan Marg,Completed,11.957998627374014,37.0,16.2
+256,RIDER-00256,,775.27,12,Go Mini,IMT Manesar,Mansarovar Park,No Driver Found,,,
+251,RIDER-00251,DRV-GOM-02,761.15,12,Go Mini,Panipat,Kaushambi,Completed,18.554526171148588,15.2,18.02
+243,RIDER-00243,DRV-GOS-02,745.35,12,Go Sedan,Noida Sector 18,Rohini West,Completed,13.903443824700911,36.9,10.29
+233,RIDER-00233,DRV-GOM-01,732.4,12,Go Mini,Panipat,Govindpuri,Completed,25.535040176084635,42.6,18.47
+262,RIDER-00262,DRV-PRE-01,795.11,13,Premier Sedan,Rohini East,Punjabi Bagh,Cancelled by Driver,5.603026650236734,,
+250,RIDER-00250,DRV-AUT-04,760.62,12,Auto,Azadpur,Bhiwadi,Completed,14.759726245658863,33.0,35.09
+258,RIDER-00258,DRV-AUT-02,780.0,12,Auto,Shivaji Park,Greater Kailash,Completed,3.496966961684052,28.7,4.98
+242,RIDER-00242,DRV-EBI-01,744.94,12,eBike,IGNOU Road,Udyog Vihar Phase 4,Completed,26.40264557334076,42.6,27.62
+259,RIDER-00259,DRV-AUT-03,782.58,13,Auto,Yamuna Bank,Bhikaji Cama Place,Completed,8.50291621941858,24.0,32.34
+261,RIDER-00261,DRV-BIK-03,784.12,13,Bike,Sikanderpur,Sultanpur,Completed,10.497758953659059,22.7,49.67
+266,RIDER-00266,,804.12,13,Go Sedan,Panchsheel Park,Madipur,No Driver Found,,,
+267,RIDER-00267,,805.76,13,Go Sedan,Kalkaji,Kaushambi,No Driver Found,,,
+268,RIDER-00268,,808.64,13,Go Mini,Saidulajab,Khandsa,No Driver Found,,,
+257,RIDER-00257,DRV-GOS-03,776.79,12,Go Sedan,Gurgaon Railway Station,Mandi House,Completed,18.337998627373985,34.2,16.5
+269,RIDER-00269,,814.37,13,Go Mini,IMT Manesar,India Gate,No Driver Found,,,
+264,RIDER-00264,DRV-GOM-03,799.24,13,Go Mini,Ambience Mall,IFFCO Chowk,Completed,10.799804752574733,22.0,41.25
+260,RIDER-00260,DRV-GOS-01,782.68,13,Go Sedan,Keshav Puram,Tagore Garden,Incomplete,25.173443824701007,28.4,30.79
+277,RIDER-00277,DRV-AUT-02,836.49,13,Auto,Rohini,Ramesh Nagar,Cancelled by Driver,3.59732529733933,,
+274,RIDER-00274,DRV-GOS-03,833.04,13,Go Sedan,Ambience Mall,Tagore Garden,Cancelled by Driver,8.813443824701016,,
+272,RIDER-00272,,828.99,13,Go Mini,Punjabi Bagh,Vidhan Sabha,No Driver Found,,,
+270,RIDER-00270,DRV-GOS-02,822.87,13,Go Sedan,Govindpuri,Jahangirpuri,Completed,8.757998627373969,16.3,24.2
+265,RIDER-00265,DRV-GOM-01,802.75,13,Go Mini,Ashram,Mundka,Completed,6.398670073684025,40.9,2.65
+263,RIDER-00263,DRV-AUT-04,797.18,13,Auto,Rohini East,Chhatarpur,Completed,24.899726245658893,39.6,41.37
+271,RIDER-00271,DRV-GOM-02,823.67,13,Go Mini,Mansarovar Park,Anand Vihar ISBT,Completed,11.969804752574737,27.7,29.61
+282,RIDER-00282,,852.58,14,Auto,Sarai Kale Khan,Noida Sector 62,No Driver Found,,,
+284,RIDER-00284,,852.97,14,Go Mini,South Extension,Malviya Nagar,No Driver Found,,,
+281,RIDER-00281,DRV-AUT-04,851.25,14,Auto,Udyog Vihar,Mehrauli,Cancelled by Customer,21.529726245658914,,
+285,RIDER-00285,,858.61,14,Go Mini,Ghitorni,Madipur,No Driver Found,,,
+278,RIDER-00278,DRV-AUT-03,838.98,13,Auto,Rohini,Shivaji Park,Completed,11.407325297339344,24.9,38.56
+288,RIDER-00288,,861.59,14,eBike,Connaught Place,Kadarpur,No Driver Found,,,
+273,RIDER-00273,DRV-AUT-01,829.8,13,Auto,Connaught Place,Saket A Block,Incomplete,3.0990124034553674,43.7,31.77
+276,RIDER-00276,DRV-PRE-02,834.0,13,Premier Sedan,Badarpur,Arjangarh,Completed,14.395351624871433,28.4,20.43
+289,RIDER-00289,DRV-AUT-01,863.81,14,Auto,Welcome,Moti Nagar,Cancelled by Driver,13.56972624565899,,
+275,RIDER-00275,DRV-GOS-01,833.98,13,Go Sedan,Panipat,Okhla,Completed,14.173443824700986,29.7,37.98
+295,RIDER-00295,DRV-AUT-02,875.04,14,Auto,Pulbangash,Dwarka Mor,Cancelled by Customer,9.24732529733933,,
+287,RIDER-00287,DRV-BIK-02,861.29,14,Bike,Chandni Chowk,Hauz Khas,Completed,2.3972163491833043,22.0,44.23
+292,RIDER-00292,,871.79,14,Go Sedan,Kashmere Gate ISBT,Narsinghpur,No Driver Found,,,
+294,RIDER-00294,,872.83,14,Go Sedan,Jama Masjid,Rajiv Nagar,No Driver Found,,,
+283,RIDER-00283,DRV-GOM-01,852.95,14,Go Mini,Sarojini Nagar,Udyog Bhawan,Completed,14.389804752574719,22.2,2.67
+280,RIDER-00280,DRV-BIK-01,848.85,14,Bike,MG Road,Inderlok,Completed,10.095514848861944,33.4,40.89
+298,RIDER-00298,DRV-PRE-02,885.1,14,Premier Sedan,Bahadurgarh,Golf Course Road,Cancelled by Driver,8.30221150436289,,
+299,RIDER-00299,DRV-BIK-01,886.49,14,Bike,Shastri Park,Noida Sector 18,Cancelled by Driver,9.655514848861959,,
+290,RIDER-00290,DRV-GOS-02,868.38,14,Go Sedan,Shivaji Park,Paharganj,Completed,6.495357561071955,22.8,8.85
+293,RIDER-00293,DRV-PRE-01,871.9,14,Premier Sedan,Dwarka Mor,Indirapuram,Completed,7.703459102242346,20.8,15.81
+279,RIDER-00279,DRV-GOM-03,844.01,14,Go Mini,Vatika Chowk,IIT Delhi,Completed,16.83867007368399,40.5,43.01
+286,RIDER-00286,DRV-EBI-01,859.16,14,eBike,Kherki Daula Toll,Mandi House,Completed,5.004409832157194,38.0,26.96
+291,RIDER-00291,DRV-GOS-03,870.69,14,Go Sedan,Vatika Chowk,Tughlakabad,Completed,10.863443824700948,31.0,49.1
+305,RIDER-00305,,898.77,14,Go Mini,Hero Honda Chowk,Kherki Daula Toll,No Driver Found,,,
+296,RIDER-00296,DRV-GOM-02,875.4,14,Go Mini,Huda City Centre,Meerut,Completed,18.03980475257483,21.0,38.09
+306,RIDER-00306,,900.57,15,Bike,Indraprastha,Nawada,No Driver Found,,,
+297,RIDER-00297,DRV-BIK-03,884.45,14,Bike,Govindpuri,Keshav Puram,Completed,11.2372163491832,23.7,12.58
+308,RIDER-00308,,905.59,15,eBike,Indirapuram,Ambience Mall,No Driver Found,,,
+309,RIDER-00309,,906.89,15,eBike,DLF Phase 3,Saket,No Driver Found,,,
+302,RIDER-00302,DRV-GOS-01,894.97,14,Go Sedan,Azadpur,Pataudi Chowk,Incomplete,9.305357561071878,19.1,3.11
+311,RIDER-00311,,909.27,15,Bike,Udyog Vihar,Ashok Park Main,No Driver Found,,,
+300,RIDER-00300,DRV-EBI-01,891.57,14,eBike,Ghitorni Village,Vaishali,Completed,15.994409832157112,17.0,33.49
+314,RIDER-00314,,910.35,15,Bike,Noida Film City,Vaishali,No Driver Found,,,
+315,RIDER-00315,,912.22,15,Bike,Mehrauli,Sadar Bazar Gurgaon,No Driver Found,,,
+318,RIDER-00318,DRV-AUT-01,916.94,15,Auto,Model Town,Jahangirpuri,Cancelled by Driver,13.496559677980827,,
+319,RIDER-00319,,917.49,15,Bike,Lal Quila,MG Road,No Driver Found,,,
+324,RIDER-00324,DRV-AUT-02,924.21,15,Auto,Ashok Park Main,Lok Kalyan Marg,Cancelled by Driver,9.626559677980845,,
+322,RIDER-00322,,919.33,15,Premier Sedan,Pulbangash,Madipur,No Driver Found,,,
+323,RIDER-00323,,919.65,15,Bike,Shastri Nagar,Pragati Maidan,No Driver Found,,,
+301,RIDER-00301,DRV-GOM-03,893.32,14,Go Mini,Hauz Khas,Kherki Daula Toll,Completed,20.428670073683882,22.4,22.5
+303,RIDER-00303,DRV-BIK-02,895.08,14,Bike,Hauz Rani,Paschim Vihar,Completed,10.56551484886188,30.7,16.98
+310,RIDER-00310,DRV-GOS-03,908.52,15,Go Sedan,Udyog Bhawan,Mansarovar Park,Cancelled by Customer,27.95535756107197,,
+327,RIDER-00327,DRV-AUT-03,928.18,15,Auto,Noida Extension,Vaishali,Cancelled by Driver,13.356559677980908,,
+313,RIDER-00313,DRV-AUT-04,909.98,15,Auto,Qutub Minar,Arjangarh,Completed,11.498119757892255,21.7,13.21
+328,RIDER-00328,DRV-GOS-01,928.36,15,Go Sedan,Saidulajab,Udyog Bhawan,Cancelled by Driver,17.01535756107196,,
+320,RIDER-00320,DRV-PRE-01,918.57,15,Premier Sedan,Pulbangash,Maidan Garhi,Completed,10.20250444486835,18.0,36.46
+304,RIDER-00304,DRV-GOS-02,898.18,14,Go Sedan,Green Park,Ramesh Nagar,Completed,23.773443824701097,25.5,39.53
+316,RIDER-00316,DRV-GOM-01,913.48,15,Go Mini,Delhi Gate,Sadar Bazar Gurgaon,Completed,3.3598047525747687,32.5,14.54
+333,RIDER-00333,,937.31,15,Bike,Noida Film City,Botanical Garden,No Driver Found,,,
+335,RIDER-00335,,939.26,15,Go Sedan,Botanical Garden,Tagore Garden,No Driver Found,,,
+312,RIDER-00312,DRV-AUT-03,909.59,15,Auto,Yamuna Bank,IGNOU Road,Completed,4.503873686400993,41.2,48.46
+336,RIDER-00336,,941.03,15,Go Mini,Okhla,Kashmere Gate,No Driver Found,,,
+334,RIDER-00334,DRV-GOS-03,938.7,15,Go Sedan,Netaji Subhash Place,Azadpur,Cancelled by Driver,18.45344382470098,,
+337,RIDER-00337,,943.18,15,Go Mini,GTB Nagar,Maidan Garhi,No Driver Found,,,
+317,RIDER-00317,DRV-EBI-01,914.06,15,eBike,DLF Phase 3,Shastri Park,Completed,16.804409832157194,27.5,44.45
+339,RIDER-00339,,943.63,15,Go Sedan,Mehrauli,Old Gurgaon,No Driver Found,,,
+325,RIDER-00325,DRV-GOM-02,925.9,15,Go Mini,IMT Manesar,Khan Market,Completed,14.44867007368391,18.3,35.44
+307,RIDER-00307,DRV-BIK-03,905.03,15,Bike,Ghaziabad,GTB Nagar,Completed,24.45721634918332,30.6,46.19
+326,RIDER-00326,DRV-BIK-01,927.08,15,Bike,Udyog Vihar Phase 4,Akshardham,Completed,18.465514848861925,15.3,20.13
+345,RIDER-00345,,950.87,15,Auto,Mehrauli,Badarpur,No Driver Found,,,
+346,RIDER-00346,,952.2,15,Go Mini,Hero Honda Chowk,Anand Vihar ISBT,No Driver Found,,,
+347,RIDER-00347,,952.43,15,Go Mini,Jor Bagh,Greater Noida,No Driver Found,,,
+348,RIDER-00348,,952.54,15,Auto,Moolchand,Noida Sector 62,No Driver Found,,,
+349,RIDER-00349,,953.58,15,Auto,Shastri Nagar,Shivaji Park,No Driver Found,,,
+350,RIDER-00350,,954.54,15,Go Sedan,Maidan Garhi,Samaypur Badli,No Driver Found,,,
+352,RIDER-00352,,955.81,15,Auto,Noida Film City,Nawada,No Driver Found,,,
+342,RIDER-00342,DRV-AUT-02,946.29,15,Auto,Udyog Vihar Phase 4,Paharganj,Cancelled by Driver,25.903873686401106,,
+321,RIDER-00321,DRV-PRE-02,919.04,15,Premier Sedan,Moti Nagar,Tagore Garden,Completed,14.099767132813758,39.1,12.44
+354,RIDER-00354,,957.55,15,Go Sedan,Tughlakabad,Samaypur Badli,No Driver Found,,,
+361,RIDER-00361,DRV-PRE-02,972.04,16,Premier Sedan,ITO,Hero Honda Chowk,Cancelled by Customer,5.099767132813804,,
+355,RIDER-00355,,962.35,16,Go Sedan,India Gate,Munirka,No Driver Found,,,
+338,RIDER-00338,DRV-GOS-01,943.23,15,Go Sedan,Huda City Centre,Faridabad Sector 15,Completed,21.523443824701054,13.1,20.09
+331,RIDER-00331,DRV-GOS-02,933.09,15,Go Sedan,Kanhaiya Nagar,Ambience Mall,Completed,23.185357561071918,27.2,34.35
+357,RIDER-00357,,968.85,16,Go Mini,Maidan Garhi,Faridabad Sector 15,No Driver Found,,,
+359,RIDER-00359,,970.51,16,Go Mini,Ghaziabad,Khandsa,No Driver Found,,,
+351,RIDER-00351,DRV-PRE-01,955.17,15,Premier Sedan,Bhikaji Cama Place,Rajouri Garden,Completed,8.302643256938087,22.9,32.17
+363,RIDER-00363,,972.66,16,Auto,Sohna Road,Moolchand,No Driver Found,,,
+330,RIDER-00330,DRV-AUT-01,931.18,15,Auto,Raj Nagar Extension,Dwarka Mor,Completed,24.79811975789237,31.9,4.07
+332,RIDER-00332,DRV-GOM-03,935.5,15,Go Mini,Govindpuri,Tughlakabad,Completed,26.339804752574764,26.3,33.68
+365,RIDER-00365,,974.43,16,Auto,Barakhamba Road,Huda City Centre,No Driver Found,,,
+368,RIDER-00368,,979.79,16,Go Sedan,Tilak Nagar,Kaushambi,No Driver Found,,,
+329,RIDER-00329,DRV-AUT-04,928.69,15,Auto,Barakhamba Road,Golf Course Road,Completed,24.04655967798085,43.6,47.56
+341,RIDER-00341,DRV-GOM-02,946.28,15,Go Mini,Shahdara,Saket A Block,Completed,20.120000000000026,30.9,16.36
+372,RIDER-00372,,984.42,16,Auto,Ramesh Nagar,Lajpat Nagar,No Driver Found,,,
+380,RIDER-00380,DRV-UBE-01,993.44,16,Uber XL,Jahangirpuri,Dwarka Sector 21,Cancelled by Driver,6.001280012693428,,
+373,RIDER-00373,,985.04,16,Go Sedan,Saket,IGI Airport,No Driver Found,,,
+340,RIDER-00340,DRV-GOM-01,943.96,15,Go Mini,Bahadurgarh,Mansarovar Park,Completed,26.488670073683853,29.7,14.75
+374,RIDER-00374,,986.26,16,Go Sedan,New Delhi Railway Station,IGI Airport,No Driver Found,,,
+375,RIDER-00375,,987.34,16,Auto,Nawada,Malviya Nagar,No Driver Found,,,
+385,RIDER-00385,DRV-PRE-02,1001.29,16,Premier Sedan,Jama Masjid,Mayur Vihar,Cancelled by Driver,2.199526071770447,,
+377,RIDER-00377,,989.56,16,Go Mini,Sultanpur,Old Gurgaon,No Driver Found,,,
+353,RIDER-00353,DRV-EBI-01,956.84,15,eBike,Anand Vihar ISBT,Sultanpur,Completed,8.524409832157062,40.8,13.83
+379,RIDER-00379,,992.33,16,Bike,Hero Honda Chowk,Panipat,No Driver Found,,,
+381,RIDER-00381,,994.49,16,Bike,Sikanderpur,Noida Sector 18,No Driver Found,,,
+358,RIDER-00358,DRV-AUT-04,970.36,16,Auto,Anand Vihar,Udyog Vihar,Completed,6.133873686401034,34.3,35.71
+344,RIDER-00344,DRV-AUT-03,947.74,15,Auto,Ashram,Azadpur,Completed,23.15999999999999,42.5,22.45
+367,RIDER-00367,DRV-BIK-03,979.48,16,Bike,IGI Airport,Paschim Vihar,Incomplete,4.600516444174081,29.6,14.74
+343,RIDER-00343,DRV-GOS-02,946.46,15,Go Sedan,Cyber Hub,Punjabi Bagh,Completed,24.739999999999963,42.5,6.27
+360,RIDER-00360,DRV-GOS-01,970.85,16,Go Sedan,Mansarovar Park,Punjabi Bagh,Completed,21.12535756107195,22.6,32.4
+383,RIDER-00383,DRV-AUT-04,998.86,16,Auto,Lajpat Nagar,Mundka,Cancelled by Driver,19.839999999999964,,
+382,RIDER-00382,DRV-AUT-03,996.86,16,Auto,Manesar,Tilak Nagar,Cancelled by Driver,22.633873686400943,,
+386,RIDER-00386,,1005.69,16,Go Mini,Bahadurgarh,Khandsa,No Driver Found,,,
+389,RIDER-00389,,1007.2,16,Go Mini,DLF Phase 3,Vasant Kunj,No Driver Found,,,
+391,RIDER-00391,DRV-EBI-01,1010.68,16,eBike,Karkarduma,Pulbangash,Cancelled by Customer,11.79894641531273,,
+390,RIDER-00390,,1008.17,16,Auto,Golf Course Road,Rithala,No Driver Found,,,
+376,RIDER-00376,DRV-GOM-02,988.14,16,Go Mini,Samaypur Badli,Raj Nagar Extension,Completed,19.808670073683903,15.5,6.08
+362,RIDER-00362,DRV-BIK-02,972.6,16,Bike,AIIMS,Chanakyapuri,Incomplete,12.99845128790514,38.1,10.13
+356,RIDER-00356,DRV-GOS-03,968.61,16,Go Sedan,Sonipat,Dwarka Mor,Incomplete,15.543443824701104,40.8,5.68
+388,RIDER-00388,DRV-AUT-02,1006.57,16,Auto,Noida Sector 18,Manesar,Cancelled by Driver,18.82387368640095,,
+364,RIDER-00364,DRV-AUT-01,974.17,16,Auto,Kalkaji,Satguru Ram Singh Marg,Completed,19.40811975789229,33.2,31.75
+370,RIDER-00370,DRV-BIK-01,982.23,16,Bike,Badshahpur,Azadpur,Completed,10.101167292119134,35.1,22.2
+366,RIDER-00366,DRV-GOM-03,978.68,16,Go Mini,Shastri Nagar,Pitampura,Completed,21.75980475257477,31.6,41.07
+400,RIDER-00400,DRV-BIK-02,1022.76,17,Bike,Cyber Hub,Preet Vihar,Cancelled by Driver,9.895707028295215,,
+398,RIDER-00398,,1019.79,16,Go Mini,Khandsa,Chanakyapuri,No Driver Found,,,
+369,RIDER-00369,DRV-AUT-02,981.94,16,Auto,Udyog Vihar,Maidan Garhi,Completed,26.596559677980917,27.2,7.66
+384,RIDER-00384,DRV-GOS-02,999.1,16,Go Sedan,Ashok Park Main,Gurgaon Sector 29,Completed,19.700000000000024,17.5,7.75
+378,RIDER-00378,DRV-PRE-01,991.21,16,Premier Sedan,Anand Vihar,Badshahpur,Completed,4.101668980799195,41.9,31.52
+401,RIDER-00401,,1023.32,17,Go Mini,Mehrauli,Karkarduma,No Driver Found,,,
+371,RIDER-00371,DRV-GOM-01,983.23,16,Go Mini,Golf Course Road,Chhatarpur,Incomplete,16.269999999999936,42.7,25.63
+405,RIDER-00405,DRV-BIK-03,1031.07,17,Bike,Rajiv Nagar,Pulbangash,Cancelled by Driver,13.601413999243368,,
+406,RIDER-00406,,1031.65,17,Uber XL,Shahdara,Nawada,No Driver Found,,,
+414,RIDER-00414,DRV-PRE-02,1038.21,17,Premier Sedan,Sushant Lok,Basai Dhankot,Cancelled by Customer,9.198711122405665,,
+409,RIDER-00409,,1033.34,17,Go Sedan,Gurgaon Sector 29,Keshav Puram,No Driver Found,,,
+395,RIDER-00395,DRV-GOM-03,1014.76,16,Go Mini,IGNOU Road,Saket,Incomplete,16.58867007368385,18.1,37.44
+410,RIDER-00410,,1034.5,17,Auto,Connaught Place,Ghaziabad,No Driver Found,,,
+399,RIDER-00399,DRV-UBE-01,1020.77,17,Uber XL,Saket,Civil Lines Gurgaon,Completed,13.90405368265217,15.5,21.55
+392,RIDER-00392,DRV-GOS-03,1011.36,16,Go Sedan,Sonipat,Ghitorni,Completed,15.215357561071983,25.1,35.57
+416,RIDER-00416,,1039.23,17,Auto,Basai Dhankot,Saket A Block,No Driver Found,,,
+418,RIDER-00418,,1041.76,17,Auto,South Extension,Kanhaiya Nagar,No Driver Found,,,
+419,RIDER-00419,,1042.1,17,Auto,Shivaji Park,Jhilmil,No Driver Found,,,
+407,RIDER-00407,DRV-BIK-01,1032.53,17,Bike,Panchsheel Park,Mansarovar Park,Completed,7.597799271413669,17.4,26.88
+420,RIDER-00420,,1043.6,17,Go Sedan,Botanical Garden,Central Secretariat,No Driver Found,,,
+402,RIDER-00402,DRV-GOS-01,1023.85,17,Go Sedan,Sultanpur,Samaypur Badli,Completed,11.503443824701003,23.4,21.3
+423,RIDER-00423,,1046.12,17,Go Sedan,Chhatarpur,Chandni Chowk,No Driver Found,,,
+424,RIDER-00424,,1046.2,17,Go Sedan,Khandsa,Aya Nagar,No Driver Found,,,
+425,RIDER-00425,,1046.66,17,Go Sedan,Rohini West,Rajiv Chowk,No Driver Found,,,
+427,RIDER-00427,,1047.25,17,Go Mini,Mandi House,Sikanderpur,No Driver Found,,,
+428,RIDER-00428,,1047.26,17,Premier Sedan,Khandsa,Vinobapuri,No Driver Found,,,
+412,RIDER-00412,DRV-BIK-02,1036.34,17,Bike,Dilshad Garden,Mandi House,Completed,14.801567259707145,11.5,31.69
+429,RIDER-00429,,1047.75,17,Auto,Samaypur Badli,Madipur,No Driver Found,,,
+430,RIDER-00430,,1048.63,17,Auto,Akshardham,Saket,No Driver Found,,,
+403,RIDER-00403,DRV-GOS-02,1024.82,17,Go Sedan,Greater Kailash,Netaji Subhash Place,Completed,15.180000000000245,24.4,29.79
+422,RIDER-00422,DRV-GOS-01,1045.82,17,Go Sedan,Vidhan Sabha,Greater Kailash,Cancelled by Driver,18.733443824701272,,
+387,RIDER-00387,DRV-AUT-01,1005.9,16,Auto,Rohini East,Udyog Bhawan,Completed,21.099999999999955,39.1,15.45
+394,RIDER-00394,DRV-AUT-03,1013.98,16,Auto,Basai Dhankot,New Delhi Railway Station,Incomplete,14.113873686401075,38.8,8.78
+393,RIDER-00393,DRV-PRE-01,1011.91,16,Premier Sedan,Patel Chowk,AIIMS,Completed,12.798133781045113,44.1,24.64
+437,RIDER-00437,DRV-BIK-02,1059.05,17,Bike,Udyog Bhawan,Netaji Subhash Place,Cancelled by Customer,9.791567259707062,,
+434,RIDER-00434,DRV-AUT-03,1057.82,17,Auto,Narsinghpur,Shastri Park,Cancelled by Customer,11.573873686401157,,
+435,RIDER-00435,,1058.01,17,Go Sedan,Tughlakabad,Delhi Gate,No Driver Found,,,
+436,RIDER-00436,,1058.62,17,Go Mini,Qutub Minar,Saket,No Driver Found,,,
+397,RIDER-00397,DRV-AUT-04,1019.04,16,Auto,Kanhaiya Nagar,Jhilmil,Completed,17.038119757892265,38.5,48.15
+438,RIDER-00438,,1061.09,17,Go Mini,Noida Sector 18,Noida Sector 62,No Driver Found,,,
+411,RIDER-00411,DRV-GOM-02,1035.91,17,Go Mini,Rajiv Nagar,GTB Nagar,Completed,8.989999999999963,31.5,11.28
+440,RIDER-00440,,1063.24,17,Go Mini,Ghaziabad,Preet Vihar,No Driver Found,,,
+396,RIDER-00396,DRV-GOM-01,1017.62,16,Go Mini,Laxmi Nagar,Kadarpur,Completed,26.319804752574576,38.7,37.81
+445,RIDER-00445,,1068.13,17,eBike,Udyog Vihar Phase 4,Shivaji Park,No Driver Found,,,
+417,RIDER-00417,DRV-GOS-03,1040.95,17,Go Sedan,DLF Phase 3,Palam Vihar,Completed,16.22535756107186,26.0,34.12
+413,RIDER-00413,DRV-BIK-03,1036.77,17,Bike,Karol Bagh,Sarai Kale Khan,Completed,10.901413999243232,36.7,15.42
+448,RIDER-00448,,1070.21,17,Go Mini,Pulbangash,Peeragarhi,No Driver Found,,,
+450,RIDER-00450,,1071.1,17,Go Mini,Govindpuri,Ghitorni,No Driver Found,,,
+404,RIDER-00404,DRV-AUT-01,1027.76,17,Auto,Paharganj,IGNOU Road,Completed,15.976559677980958,43.0,49.9
+421,RIDER-00421,DRV-BIK-01,1043.93,17,Bike,Kirti Nagar,Lajpat Nagar,Completed,24.797799271413577,18.3,2.49
+452,RIDER-00452,,1073.25,17,Premier Sedan,Akshardham,GTB Nagar,No Driver Found,,,
+453,RIDER-00453,,1073.28,17,Go Sedan,Nawada,INA Market,No Driver Found,,,
+433,RIDER-00433,DRV-AUT-02,1053.93,17,Auto,Sushant Lok,Shastri Park,Completed,17.769999999999847,17.7,30.65
+454,RIDER-00454,,1075.21,17,eBike,Kadarpur,Azadpur,No Driver Found,,,
+408,RIDER-00408,DRV-EBI-01,1033.06,17,eBike,Noida Film City,Moti Nagar,Incomplete,13.898280706771311,44.1,22.81
+415,RIDER-00415,DRV-PRE-01,1039.07,17,Premier Sedan,Satguru Ram Singh Marg,Mandi House,Completed,16.53871112240581,36.0,32.82
+455,RIDER-00455,,1076.9,17,Go Sedan,Nawada,Sultanpur,No Driver Found,,,
+458,RIDER-00458,,1077.33,17,Go Sedan,Noida Sector 18,GTB Nagar,No Driver Found,,,
+460,RIDER-00460,,1078.07,17,eBike,Anand Vihar ISBT,Civil Lines Gurgaon,No Driver Found,,,
+461,RIDER-00461,,1078.07,17,Auto,Sarai Kale Khan,Madipur,No Driver Found,,,
+462,RIDER-00462,,1078.56,17,Go Sedan,Civil Lines Gurgaon,Shahdara,No Driver Found,,,
+426,RIDER-00426,DRV-GOM-03,1046.92,17,Go Mini,Hero Honda Chowk,ITO,Incomplete,15.62867007368377,31.6,27.31
+464,RIDER-00464,,1080.77,18,Premier Sedan,Tagore Garden,Patel Chowk,No Driver Found,,,
+431,RIDER-00431,DRV-GOS-02,1052.83,17,Go Sedan,Vasant Kunj,Sohna Road,Completed,21.870000000000392,21.9,6.77
+465,RIDER-00465,,1083.86,18,Uber XL,Netaji Subhash Place,Noida Sector 18,No Driver Found,,,
+442,RIDER-00442,DRV-BIK-03,1065.01,17,Bike,Chirag Delhi,Kashmere Gate ISBT,Completed,17.431567259707073,16.5,21.17
+466,RIDER-00466,,1084.37,18,eBike,Anand Vihar,Govindpuri,No Driver Found,,,
+441,RIDER-00441,DRV-PRE-02,1064.85,17,Premier Sedan,Laxmi Nagar,Sonipat,Completed,14.458133781045035,23.2,16.43
+469,RIDER-00469,,1088.61,18,Go Mini,Vinobapuri,Tilak Nagar,No Driver Found,,,
+470,RIDER-00470,,1088.93,18,Auto,Palam Vihar,Kherki Daula Toll,No Driver Found,,,
+472,RIDER-00472,,1089.74,18,Go Mini,Pataudi Chowk,Paschim Vihar,No Driver Found,,,
+473,RIDER-00473,,1090.19,18,Bike,Karol Bagh,Delhi Gate,No Driver Found,,,
+474,RIDER-00474,,1091.29,18,Go Mini,Cyber Hub,Mansarovar Park,No Driver Found,,,
+439,RIDER-00439,DRV-GOM-01,1063.2,17,Go Mini,GTB Nagar,Kirti Nagar,Completed,18.400000000000045,24.8,48.3
+475,RIDER-00475,,1091.65,18,Auto,Noida Sector 18,MG Road,No Driver Found,,,
+432,RIDER-00432,DRV-GOS-03,1053.84,17,Go Sedan,Raj Nagar Extension,Model Town,Completed,19.513443824701245,34.3,7.47
+477,RIDER-00477,,1092.77,18,Auto,Lajpat Nagar,New Colony,No Driver Found,,,
+457,RIDER-00457,DRV-EBI-01,1077.15,17,eBike,Hero Honda Chowk,Sikanderpur,Completed,21.308280706771164,10.6,26.44
+480,RIDER-00480,,1094.62,18,Go Mini,Subhash Nagar,Subhash Chowk,No Driver Found,,,
+481,RIDER-00481,,1095.2,18,Auto,Vaishali,Mundka,No Driver Found,,,
+482,RIDER-00482,,1096.15,18,Go Mini,Noida Film City,Sushant Lok,No Driver Found,,,
+483,RIDER-00483,,1098.08,18,Go Sedan,Uttam Nagar,Udyog Bhawan,No Driver Found,,,
+484,RIDER-00484,,1098.39,18,Auto,Old Gurgaon,Mehrauli,No Driver Found,,,
+486,RIDER-00486,,1100.1,18,Bike,Badarpur,Rohini East,No Driver Found,,,
+459,RIDER-00459,DRV-AUT-03,1077.76,17,Auto,Indraprastha,Arjangarh,Completed,16.139999999999873,22.6,21.88
+444,RIDER-00444,DRV-AUT-01,1066.2,17,Auto,Maidan Garhi,Janakpuri,Completed,19.478119757892138,31.1,28.34
+443,RIDER-00443,DRV-AUT-04,1066.17,17,Auto,Kaushambi,Jor Bagh,Completed,13.22387368640102,38.7,12.89
+456,RIDER-00456,DRV-BIK-01,1077.12,17,Bike,Netaji Subhash Place,Tughlakabad,Completed,18.85141399924337,22.4,9.58
+487,RIDER-00487,,1103.6,18,Uber XL,Karkarduma,Green Park,No Driver Found,,,
+471,RIDER-00471,DRV-BIK-03,1089.24,18,Bike,Sultanpur,Pragati Maidan,Completed,12.901567259706962,16.5,30.32
+488,RIDER-00488,,1103.8,18,Go Mini,Ambience Mall,Kashmere Gate,No Driver Found,,,
+490,RIDER-00490,,1104.25,18,Go Mini,Vishwavidyalaya,Mayur Vihar,No Driver Found,,,
+449,RIDER-00449,DRV-UBE-01,1070.77,17,Uber XL,Govindpuri,Khan Market,Completed,12.498600708188178,36.1,6.26
+491,RIDER-00491,,1104.76,18,eBike,Central Secretariat,Rajiv Chowk,No Driver Found,,,
+492,RIDER-00492,,1105.52,18,Go Sedan,Chirag Delhi,Vishwavidyalaya,No Driver Found,,,
+493,RIDER-00493,,1105.69,18,Go Sedan,Okhla,DLF City Court,No Driver Found,,,
+447,RIDER-00447,DRV-GOS-01,1068.99,17,Go Sedan,Welcome,Arjangarh,Completed,27.885357561071896,26.2,3.57
+451,RIDER-00451,DRV-AUT-02,1072.88,17,Auto,Badshahpur,Indraprastha,Completed,28.35655967798084,22.2,40.45
+495,RIDER-00495,,1108.88,18,Go Mini,Civil Lines Gurgaon,Chhatarpur,No Driver Found,,,
+496,RIDER-00496,DRV-BIK-01,1108.92,18,Bike,Rohini,Shivaji Park,Cancelled by Driver,17.451413999243186,,
+468,RIDER-00468,DRV-BIK-02,1087.46,18,Bike,Yamuna Bank,Paharganj,Completed,5.195212079339126,34.0,14.43
+499,RIDER-00499,,1113.48,18,Go Sedan,Tis Hazari,New Colony,No Driver Found,,,
+498,RIDER-00498,DRV-AUT-01,1111.11,18,Auto,Rohini West,Chandni Chowk,Cancelled by Driver,18.0681197578921,,
+500,RIDER-00500,,1114.83,18,eBike,Gurgaon Sector 56,Ghitorni,No Driver Found,,,
+501,RIDER-00501,,1115.44,18,Premier Sedan,Madipur,South Extension,No Driver Found,,,
+479,RIDER-00479,DRV-GOM-01,1093.49,18,Go Mini,Kanhaiya Nagar,Kherki Daula Toll,Completed,19.31000000000008,18.7,17.11
+463,RIDER-00463,DRV-PRE-01,1078.59,17,Premier Sedan,Kashmere Gate,Hauz Khas,Completed,26.818711122405876,26.3,40.25
+504,RIDER-00504,,1117.48,18,Go Sedan,Shahdara,ITO,No Driver Found,,,
+507,RIDER-00507,DRV-AUT-04,1119.3,18,Auto,Sushant Lok,Saket,Cancelled by Driver,13.478119757892136,,
+505,RIDER-00505,,1117.78,18,Premier Sedan,RK Puram,Shivaji Park,No Driver Found,,,
+476,RIDER-00476,DRV-GOS-02,1091.83,18,Go Sedan,Gwal Pahari,Cyber Hub,Completed,11.970000000000436,29.3,9.39
+446,RIDER-00446,DRV-GOM-02,1068.19,17,Go Mini,Basai Dhankot,Ramesh Nagar,Completed,29.049804752574666,36.9,16.14
+511,RIDER-00511,,1123.38,18,Go Sedan,Khandsa,Rohini,No Driver Found,,,
+512,RIDER-00512,,1124.46,18,Premier Sedan,Golf Course Road,Gwal Pahari,No Driver Found,,,
+513,RIDER-00513,DRV-UBE-01,1126.81,18,Uber XL,Vasant Kunj,Kaushambi,Cancelled by Driver,13.296110721790956,,
+516,RIDER-00516,,1127.36,18,Bike,Vaishali,Welcome,No Driver Found,,,
+518,RIDER-00518,,1129.2,18,Bike,Lal Quila,Munirka,No Driver Found,,,
+519,RIDER-00519,,1129.63,18,Go Sedan,Udyog Vihar,Panchsheel Park,No Driver Found,,,
+489,RIDER-00489,DRV-EBI-01,1103.94,18,eBike,Vinobapuri,Barakhamba Road,Completed,7.318280706771202,33.5,24.99
+467,RIDER-00467,DRV-GOM-03,1087.01,18,Go Mini,Peeragarhi,Barakhamba Road,Completed,15.43867007368367,43.0,25.19
+529,RIDER-00529,DRV-GOM-03,1138.11,18,Go Mini,Rohini,Munirka,Cancelled by Driver,7.403029645251445,,
+520,RIDER-00520,,1130.69,18,Auto,DLF City Court,Jasola,No Driver Found,,,
+521,RIDER-00521,,1130.9,18,Go Sedan,Rajiv Chowk,Lal Quila,No Driver Found,,,
+510,RIDER-00510,DRV-GOS-02,1122.28,18,Go Sedan,Ambience Mall,Malviya Nagar,Cancelled by Driver,23.82000000000039,,
+515,RIDER-00515,DRV-BIK-01,1127.19,18,Bike,Madipur,Vatika Chowk,Completed,3.9991644787776295,15.2,24.81
+485,RIDER-00485,DRV-PRE-02,1099.26,18,Premier Sedan,ITO,Lajpat Nagar,Completed,13.148133781044999,34.3,15.49
+525,RIDER-00525,DRV-UBE-01,1135.75,18,Uber XL,IFFCO Chowk,Rithala,Cancelled by Driver,12.056110721790855,,
+523,RIDER-00523,,1132.9,18,Premier Sedan,Mehrauli,Ambience Mall,No Driver Found,,,
+524,RIDER-00524,,1133.62,18,Auto,Anand Vihar ISBT,Chanakyapuri,No Driver Found,,,
+514,RIDER-00514,DRV-BIK-03,1126.87,18,Bike,Bhikaji Cama Place,Greater Noida,Completed,5.3046590653498695,17.5,30.47
+527,RIDER-00527,,1136.23,18,Auto,Tis Hazari,Civil Lines Gurgaon,No Driver Found,,,
+502,RIDER-00502,DRV-PRE-01,1116.92,18,Premier Sedan,Indraprastha,Shastri Nagar,Completed,18.08871112240563,20.8,28.81
+503,RIDER-00503,DRV-AUT-02,1117.45,18,Auto,Anand Vihar ISBT,GTB Nagar,Completed,9.243873686401093,29.3,2.86
+528,RIDER-00528,DRV-BIK-02,1137.12,18,Bike,Barakhamba Road,Satguru Ram Singh Marg,Cancelled by Driver,20.56916447877784,,
+533,RIDER-00533,,1143.13,19,Go Sedan,Indraprastha,MG Road,No Driver Found,,,
+535,RIDER-00535,,1144.5,19,Go Sedan,Jasola,Basai Dhankot,No Driver Found,,,
+494,RIDER-00494,DRV-GOS-01,1108.38,18,Go Sedan,Chandni Chowk,Bhikaji Cama Place,Completed,26.695357561071887,25.1,10.73
+478,RIDER-00478,DRV-GOS-03,1092.95,18,Go Sedan,Jahangirpuri,Tis Hazari,Completed,31.603443824701024,35.8,19.33
+509,RIDER-00509,DRV-BIK-02,1120.26,18,Bike,Paschim Vihar,Mundka,Completed,10.298627246926618,30.6,45.01
+497,RIDER-00497,DRV-AUT-04,1109.89,18,Auto,Badarpur,Udyog Bhawan,Completed,14.109999999999673,40.1,13.71
+506,RIDER-00506,DRV-AUT-03,1118.12,18,Auto,Samaypur Badli,Rajouri Garden,Completed,8.516559677981103,37.9,31.01
+517,RIDER-00517,DRV-GOM-02,1128.48,18,Go Mini,Jor Bagh,Manesar,Completed,16.420000000000208,22.5,33.13
+541,RIDER-00541,,1155.37,19,Premier Sedan,Anand Vihar ISBT,Panchsheel Park,No Driver Found,,,
+546,RIDER-00546,DRV-GOM-02,1164.51,19,Go Mini,Faridabad Sector 15,Greater Kailash,Cancelled by Customer,6.603299293176496,,
+543,RIDER-00543,,1157.44,19,Bike,Noida Extension,Saket,No Driver Found,,,
+544,RIDER-00544,,1159.54,19,Bike,Vatika Chowk,DLF Phase 3,No Driver Found,,,
+540,RIDER-00540,DRV-GOS-02,1153.58,19,Go Sedan,Chandni Chowk,New Delhi Railway Station,Cancelled by Driver,21.47344382470119,,
+508,RIDER-00508,DRV-AUT-01,1119.75,18,Auto,South Extension,Pitampura,Completed,20.128119757892,36.7,17.18
+545,RIDER-00545,,1162.29,19,Bike,Moti Nagar,Qutub Minar,No Driver Found,,,
+547,RIDER-00547,,1165.06,19,Bike,Pataudi Chowk,Lajpat Nagar,No Driver Found,,,
+526,RIDER-00526,DRV-GOS-03,1136.17,18,Go Sedan,Tughlakabad,Badarpur,Completed,20.43000000000029,25.9,42.02
+550,RIDER-00550,,1168.79,19,Premier Sedan,New Colony,Hero Honda Chowk,No Driver Found,,,
+522,RIDER-00522,DRV-PRE-02,1132.24,18,Premier Sedan,Chirag Delhi,Indirapuram,Completed,20.868133781045024,31.7,19.93
+551,RIDER-00551,,1171.1,19,Auto,Ashram,Samaypur Badli,No Driver Found,,,
+530,RIDER-00530,DRV-AUT-02,1141.61,19,Auto,Mansarovar Park,Chandni Chowk,Completed,23.883873686401103,22.2,38.64
+536,RIDER-00536,DRV-GOS-01,1150.98,19,Go Sedan,Badarpur,Hauz Rani,Incomplete,23.395357561071886,16.0,48.64
+554,RIDER-00554,,1175.71,19,eBike,RK Puram,Sushant Lok,No Driver Found,,,
+531,RIDER-00531,DRV-GOM-01,1142.76,19,Go Mini,Manesar,Bahadurgarh,Completed,5.688670073683625,44.1,3.33
+537,RIDER-00537,DRV-BIK-01,1151.54,19,Bike,Khandsa,IGNOU Road,Completed,11.64916447877772,29.5,15.46
+552,RIDER-00552,DRV-EBI-01,1174.05,19,eBike,Khan Market,Moolchand,Completed,5.401153118904313,17.2,26.63
+557,RIDER-00557,,1182.04,19,Premier Sedan,Sarojini Nagar,Barakhamba Road,No Driver Found,,,
+559,RIDER-00559,,1182.78,19,Premier Sedan,Rajouri Garden,Govindpuri,No Driver Found,,,
+534,RIDER-00534,DRV-BIK-03,1143.84,19,Bike,Nirman Vihar,Chanakyapuri,Completed,17.134659065349798,37.5,7.46
+560,RIDER-00560,,1184.82,19,Auto,Uttam Nagar,Vasant Kunj,No Driver Found,,,
+564,RIDER-00564,,1187.45,19,Bike,Vidhan Sabha,Basai Dhankot,No Driver Found,,,
+532,RIDER-00532,DRV-PRE-01,1142.92,19,Premier Sedan,Sikanderpur,Badshahpur,Completed,18.88871112240554,40.9,49.77
+567,RIDER-00567,,1188.72,19,Go Mini,Peeragarhi,Kanhaiya Nagar,No Driver Found,,,
+568,RIDER-00568,,1188.85,19,Bike,GTB Nagar,Golf Course Road,No Driver Found,,,
+538,RIDER-00538,DRV-AUT-03,1151.81,19,Auto,ITO,Saket A Block,Completed,16.089999999999737,37.8,5.92
+570,RIDER-00570,,1191.14,19,Bike,DLF City Court,Preet Vihar,No Driver Found,,,
+571,RIDER-00571,,1192.15,19,Go Mini,Chandni Chowk,Noida Sector 62,No Driver Found,,,
+539,RIDER-00539,DRV-BIK-02,1152.45,19,Bike,Jor Bagh,Preet Vihar,Completed,18.808627246926427,37.1,45.91
+548,RIDER-00548,DRV-AUT-01,1167.16,19,Auto,Panipat,Preet Vihar,Completed,15.218119757891873,26.2,21.18
+553,RIDER-00553,DRV-GOS-03,1174.35,19,Go Sedan,Udyog Vihar Phase 4,Model Town,Completed,10.703443824701253,26.2,38.54
+574,RIDER-00574,,1196.96,19,Bike,Lal Quila,Vidhan Sabha,No Driver Found,,,
+576,RIDER-00576,,1200.19,20,Bike,Ashok Park Main,DLF City Court,No Driver Found,,,
+556,RIDER-00556,DRV-AUT-02,1177.95,19,Auto,Uttam Nagar,Panipat,Completed,21.043873686401003,16.5,2.96
+577,RIDER-00577,,1200.92,20,Go Mini,Karol Bagh,DLF City Court,No Driver Found,,,
+555,RIDER-00555,DRV-PRE-02,1175.72,19,Premier Sedan,Pitampura,Maidan Garhi,Completed,16.388133781045145,23.9,2.46
+542,RIDER-00542,DRV-AUT-04,1157.13,19,Auto,Tis Hazari,Shahdara,Completed,16.60655967798102,42.3,49.41
+581,RIDER-00581,,1204.65,20,eBike,Ramesh Nagar,Raj Nagar Extension,No Driver Found,,,
+549,RIDER-00549,DRV-GOM-03,1168.55,19,Go Mini,Nawada,Ashok Vihar,Completed,14.502348844165681,39.6,19.56
+589,RIDER-00589,DRV-PRE-02,1215.17,20,Premier Sedan,Panipat,Raj Nagar Extension,Cancelled by Customer,8.338133781045144,,
+585,RIDER-00585,DRV-GOM-03,1212.91,20,Go Mini,Indirapuram,Tis Hazari,Cancelled by Customer,11.842348844165462,,
+583,RIDER-00583,,1210.63,20,eBike,Jhilmil,Paharganj,No Driver Found,,,
+572,RIDER-00572,DRV-AUT-03,1194.64,19,Auto,Nehru Place,South Extension,Completed,15.459999999999491,15.7,46.78
+569,RIDER-00569,DRV-EBI-01,1189.89,19,eBike,Nirman Vihar,Sarai Kale Khan,Incomplete,13.761153118904303,23.6,36.71
+563,RIDER-00563,DRV-BIK-01,1186.93,19,Bike,Azadpur,Panipat,Incomplete,13.644659065349606,26.7,32.78
+586,RIDER-00586,,1213.54,20,Go Sedan,INA Market,Gurgaon Sector 56,No Driver Found,,,
+588,RIDER-00588,,1214.27,20,Go Sedan,Nawada,Mansarovar Park,No Driver Found,,,
+562,RIDER-00562,DRV-BIK-03,1186.81,19,Bike,Palam Vihar,Chanakyapuri,Completed,10.979164478777738,32.7,2.49
+565,RIDER-00565,DRV-GOS-01,1188.31,19,Go Sedan,Jasola,Mandi House,Incomplete,2.296626088848643,40.3,49.58
+590,RIDER-00590,DRV-GOM-01,1216.15,20,Go Mini,Rajouri Garden,Ambience Mall,Cancelled by Driver,15.102348844165363,,
+558,RIDER-00558,DRV-GOM-01,1182.76,19,Go Mini,Rohini,Kirti Nagar,Completed,7.798037348312209,41.0,7.25
+593,RIDER-00593,,1217.72,20,Go Sedan,Udyog Bhawan,Lal Quila,No Driver Found,,,
+592,RIDER-00592,DRV-GOM-02,1217.55,20,Go Mini,Rajiv Nagar,IIT Delhi,Cancelled by Customer,18.602348844165498,,
+596,RIDER-00596,,1222.78,20,Auto,Connaught Place,Munirka,No Driver Found,,,
+594,RIDER-00594,DRV-GOM-03,1218.99,20,Go Mini,Faridabad Sector 15,Bhiwadi,Cancelled by Driver,22.668037348312147,,
+578,RIDER-00578,DRV-AUT-01,1200.99,20,Auto,Jama Masjid,DLF Phase 3,Completed,18.803873686400994,22.0,21.23
+561,RIDER-00561,DRV-GOM-02,1185.34,19,Go Mini,GTB Nagar,Noida Film City,Completed,15.508670073683607,42.3,14.45
+598,RIDER-00598,,1228.74,20,Go Sedan,Model Town,Jasola,No Driver Found,,,
+580,RIDER-00580,DRV-GOS-03,1202.84,20,Go Sedan,Ghitorni,Udyog Vihar,Completed,23.01344382470129,18.4,47.93
+600,RIDER-00600,,1230.53,20,Go Sedan,Pulbangash,Chhatarpur,No Driver Found,,,
+579,RIDER-00579,DRV-GOS-02,1202.53,20,Go Sedan,Nawada,Delhi Gate,Completed,11.80346660901687,31.4,43.46
+573,RIDER-00573,DRV-BIK-02,1196.54,19,Bike,IFFCO Chowk,Lok Kalyan Marg,Completed,17.218627246926324,33.6,43.65
+601,RIDER-00601,DRV-GOM-02,1232.03,20,Go Mini,Lok Kalyan Marg,Jahangirpuri,Cancelled by Customer,19.62803734831209,,
+605,RIDER-00605,,1237.68,20,eBike,Kashmere Gate ISBT,India Gate,No Driver Found,,,
+587,RIDER-00587,DRV-BIK-03,1213.73,20,Bike,Adarsh Nagar,Dwarka Sector 21,Completed,21.244659065349605,18.4,2.54
+606,RIDER-00606,,1238.71,20,eBike,Mansarovar Park,Pitampura,No Driver Found,,,
+607,RIDER-00607,,1240.56,20,Auto,Moolchand,Green Park,No Driver Found,,,
+609,RIDER-00609,,1240.95,20,eBike,Welcome,Subhash Nagar,No Driver Found,,,
+566,RIDER-00566,DRV-PRE-01,1188.44,19,Premier Sedan,Jasola,MG Road,Completed,25.668711122405647,42.0,20.41
+575,RIDER-00575,DRV-AUT-04,1197.23,19,Auto,Bhikaji Cama Place,Akshardham,Completed,22.748119757891935,36.7,11.31
+611,RIDER-00611,DRV-GOM-03,1244.93,20,Go Mini,Paharganj,Bahadurgarh,Cancelled by Driver,12.598586463307674,,
+616,RIDER-00616,DRV-GOM-01,1252.51,20,Go Mini,Green Park,Pitampura,Cancelled by Driver,6.296470475772412,,
+613,RIDER-00613,,1246.32,20,Auto,Maidan Garhi,Arjangarh,No Driver Found,,,
+591,RIDER-00591,DRV-GOS-01,1216.69,20,Go Sedan,Bhikaji Cama Place,Malviya Nagar,Completed,25.716626088848443,19.7,45.27
+615,RIDER-00615,DRV-PRE-02,1250.77,20,Premier Sedan,RK Puram,Huda City Centre,Cancelled by Driver,13.338711122405812,,
+597,RIDER-00597,DRV-BIK-01,1226.74,20,Bike,Kashmere Gate,Sonipat,Completed,6.14916447877763,33.7,28.07
+617,RIDER-00617,,1253.67,20,Auto,Dwarka Sector 21,Rohini,No Driver Found,,,
+582,RIDER-00582,DRV-AUT-02,1206.11,20,Auto,Moolchand,New Delhi Railway Station,Completed,21.12655967798123,41.6,36.07
+604,RIDER-00604,DRV-EBI-01,1234.76,20,eBike,Kaushambi,Hauz Khas,Completed,10.402814057093247,24.3,47.2
+618,RIDER-00618,,1255.09,20,Go Sedan,Azadpur,Karkarduma,No Driver Found,,,
+614,RIDER-00614,DRV-GOS-03,1248.77,20,Go Sedan,Sadar Bazar Gurgaon,Ramesh Nagar,Completed,6.503581287679253,16.2,26.57
+620,RIDER-00620,,1259.18,20,Auto,IIT Delhi,Aya Nagar,No Driver Found,,,
+624,RIDER-00624,DRV-PRE-01,1263.94,21,Premier Sedan,Tagore Garden,Hero Honda Chowk,Cancelled by Driver,10.768711122405739,,
+625,RIDER-00625,,1264.63,21,Auto,Panipat,Nirman Vihar,No Driver Found,,,
+627,RIDER-00627,,1266.62,21,Auto,Hauz Khas,Arjangarh,No Driver Found,,,
+584,RIDER-00584,DRV-AUT-03,1212.63,20,Auto,Keshav Puram,Mandi House,Completed,26.46999999999962,42.8,17.69
+628,RIDER-00628,,1267.25,21,Go Sedan,Kaushambi,Pragati Maidan,No Driver Found,,,
+595,RIDER-00595,DRV-GOM-01,1221.89,20,Go Mini,Bhikaji Cama Place,Green Park,Completed,27.662348844165443,33.1,31.26
+612,RIDER-00612,DRV-PRE-01,1245.82,20,Premier Sedan,Pulbangash,Kashmere Gate,Completed,4.698528393060042,32.3,35.68
+630,RIDER-00630,,1268.33,21,Bike,Udyog Bhawan,Rohini East,No Driver Found,,,
+631,RIDER-00631,,1268.61,21,Auto,Rajiv Chowk,Moolchand,No Driver Found,,,
+632,RIDER-00632,,1268.86,21,Go Sedan,Ghitorni Village,Model Town,No Driver Found,,,
+603,RIDER-00603,DRV-BIK-02,1234.3,20,Bike,Sikanderpur,Khandsa,Completed,30.158627246926336,19.7,41.06
+633,RIDER-00633,,1270.31,21,Go Sedan,Panchsheel Park,Hero Honda Chowk,No Driver Found,,,
+635,RIDER-00635,,1271.0,21,Premier Sedan,Rajiv Chowk,Rajiv Chowk,No Driver Found,,,
+602,RIDER-00602,DRV-AUT-04,1233.28,20,Auto,Dwarka Sector 21,Kalkaji,Completed,27.513873686400984,27.7,37.29
+637,RIDER-00637,,1273.7,21,Auto,Kanhaiya Nagar,Akshardham,No Driver Found,,,
+638,RIDER-00638,,1274.56,21,Go Sedan,Rohini,Munirka,No Driver Found,,,
+639,RIDER-00639,,1275.59,21,eBike,Jahangirpuri,Jhilmil,No Driver Found,,,
+641,RIDER-00641,,1278.48,21,eBike,Gwal Pahari,Jahangirpuri,No Driver Found,,,
+642,RIDER-00642,,1279.37,21,Go Mini,INA Market,Arjangarh,No Driver Found,,,
+643,RIDER-00643,,1280.73,21,eBike,Greater Noida,Ashram,No Driver Found,,,
+644,RIDER-00644,,1283.04,21,Auto,Shastri Nagar,Meerut,No Driver Found,,,
+621,RIDER-00621,DRV-EBI-01,1261.1,21,eBike,Vidhan Sabha,Dwarka Sector 21,Incomplete,17.762814057093372,19.2,11.08
+599,RIDER-00599,DRV-GOS-02,1229.83,20,Go Sedan,Barakhamba Road,Faridabad Sector 15,Completed,26.42344382470128,42.8,15.98
+608,RIDER-00608,DRV-BIK-03,1240.79,20,Bike,Netaji Subhash Place,Ghitorni Village,Completed,21.584659065349797,36.7,34.76
+647,RIDER-00647,,1286.0,21,Go Mini,Indirapuram,Hero Honda Chowk,No Driver Found,,,
+648,RIDER-00648,,1288.24,21,Go Sedan,Gwal Pahari,Gwal Pahari,No Driver Found,,,
+649,RIDER-00649,,1288.55,21,Go Mini,New Delhi Railway Station,Seelampur,No Driver Found,,,
+610,RIDER-00610,DRV-AUT-01,1243.5,20,Auto,Rajouri Garden,Rajiv Nagar,Completed,17.67811975789209,44.4,8.09
+645,RIDER-00645,DRV-BIK-01,1284.41,21,Bike,Moolchand,Jasola,Completed,5.200413060772189,16.2,18.88
+650,RIDER-00650,,1290.91,21,Go Sedan,Khan Market,Panipat,No Driver Found,,,
+652,RIDER-00652,,1292.6,21,Go Sedan,Tis Hazari,Anand Vihar,No Driver Found,,,
+654,RIDER-00654,,1295.66,21,Go Mini,Badshahpur,GTB Nagar,No Driver Found,,,
+623,RIDER-00623,DRV-UBE-01,1263.47,21,Uber XL,Uttam Nagar,Moolchand,Completed,9.004749405469283,40.0,49.79
+629,RIDER-00629,DRV-AUT-02,1268.29,21,Auto,South Extension,Sultanpur,Completed,28.409999999999673,16.1,15.67
+658,RIDER-00658,,1300.74,21,Go Sedan,Vinobapuri,Saket,No Driver Found,,,
+622,RIDER-00622,DRV-GOM-02,1261.88,21,Go Mini,IIT Delhi,Indirapuram,Completed,9.698661114532523,44.6,24.48
+659,RIDER-00659,,1302.14,21,eBike,IGNOU Road,Rohini,No Driver Found,,,
+626,RIDER-00626,DRV-PRE-02,1265.15,21,Premier Sedan,Subhash Nagar,Chirag Delhi,Completed,11.858711122405612,40.3,10.45
+660,RIDER-00660,,1302.82,21,Auto,Barakhamba Road,Paschim Vihar,No Driver Found,,,
+661,RIDER-00661,,1304.3,21,Auto,RK Puram,Nehru Place,No Driver Found,,,
+662,RIDER-00662,,1304.31,21,Go Sedan,Pragati Maidan,Noida Film City,No Driver Found,,,
+634,RIDER-00634,DRV-PRE-01,1270.7,21,Premier Sedan,Ashok Vihar,Noida Extension,Completed,22.118528393059933,27.1,6.95
+664,RIDER-00664,,1308.93,21,eBike,Golf Course Road,Lal Quila,No Driver Found,,,
+653,RIDER-00653,DRV-EBI-01,1293.61,21,eBike,India Gate,Connaught Place,Completed,12.95281405709352,17.5,45.89
+619,RIDER-00619,DRV-GOS-01,1258.06,20,Go Sedan,Seelampur,Hero Honda Chowk,Incomplete,25.613581287679335,41.6,43.33
+665,RIDER-00665,,1311.18,21,Auto,Peeragarhi,Indraprastha,No Driver Found,,,
+666,RIDER-00666,,1311.38,21,Auto,IFFCO Chowk,Pragati Maidan,No Driver Found,,,
+670,RIDER-00670,DRV-BIK-03,1314.45,21,Bike,Jasola,Sarai Kale Khan,Cancelled by Driver,12.998563105755693,,
+667,RIDER-00667,,1313.18,21,Auto,Hauz Khas,Chanakyapuri,No Driver Found,,,
+636,RIDER-00636,DRV-AUT-03,1273.51,21,Auto,RK Puram,Sonipat,Completed,19.083873686401013,37.0,47.22
+655,RIDER-00655,DRV-AUT-04,1297.36,21,Auto,Ashok Vihar,Udyog Vihar,Completed,20.018119757892283,16.4,7.56
+672,RIDER-00672,,1320.91,22,Premier Sedan,Kadarpur,Mayur Vihar,No Driver Found,,,
+640,RIDER-00640,DRV-GOM-03,1277.3,21,Go Mini,Vidhan Sabha,Ambience Mall,Completed,19.25234884416559,44.4,25.11
+651,RIDER-00651,DRV-BIK-02,1291.08,21,Bike,Malviya Nagar,RK Puram,Completed,10.594659065349878,40.5,27.31
+657,RIDER-00657,DRV-UBE-01,1299.05,21,Uber XL,Tis Hazari,Mayur Vihar,Completed,19.724749405469357,26.3,18.23
+646,RIDER-00646,DRV-GOS-02,1284.68,21,Go Sedan,Ambience Mall,Shivaji Park,Completed,25.273443824701097,35.8,35.92
+678,RIDER-00678,,1339.88,22,Premier Sedan,Aya Nagar,Lajpat Nagar,No Driver Found,,,
+679,RIDER-00679,,1340.26,22,Uber XL,Rohini East,Moolchand,No Driver Found,,,
+668,RIDER-00668,DRV-EBI-01,1313.63,21,eBike,Badarpur,Shastri Park,Completed,18.13281405709331,24.6,49.98
+681,RIDER-00681,,1342.8,22,Bike,Jama Masjid,Netaji Subhash Place,No Driver Found,,,
+683,RIDER-00683,,1345.41,22,Premier Sedan,Chandni Chowk,ITO,No Driver Found,,,
+684,RIDER-00684,,1345.72,22,Bike,Connaught Place,Ramesh Nagar,No Driver Found,,,
+669,RIDER-00669,DRV-PRE-01,1313.76,21,Premier Sedan,Satguru Ram Singh Marg,Yamuna Bank,Completed,8.258528393059896,39.9,9.93
+656,RIDER-00656,DRV-AUT-01,1297.89,21,Auto,Moti Nagar,Kanhaiya Nagar,Completed,22.3099999999994,42.4,38.66
+685,RIDER-00685,,1347.76,22,Premier Sedan,Mehrauli,Connaught Place,No Driver Found,,,
+674,RIDER-00674,DRV-AUT-02,1330.12,22,Auto,Tughlakabad,Jahangirpuri,Completed,3.3025744589377153,31.9,7.38
+687,RIDER-00687,,1353.16,22,Go Mini,Kirti Nagar,Badshahpur,No Driver Found,,,
+673,RIDER-00673,DRV-GOS-03,1326.32,22,Go Sedan,Jahangirpuri,Noida Sector 18,Completed,5.500625007677172,36.5,17.2
+682,RIDER-00682,DRV-GOM-01,1344.0,22,Go Mini,Shahdara,Nirman Vihar,Completed,10.89943426785626,15.5,17.72
+676,RIDER-00676,DRV-UBE-01,1333.88,22,Uber XL,Lal Quila,Chirag Delhi,Completed,16.39474940546911,21.5,31.24
+689,RIDER-00689,,1357.09,22,Bike,Subhash Nagar,Gwal Pahari,No Driver Found,,,
+663,RIDER-00663,DRV-PRE-02,1305.61,21,Premier Sedan,Kadarpur,Gwal Pahari,Completed,21.498711122405712,45.0,26.61
+690,RIDER-00690,,1357.14,22,Bike,Punjabi Bagh,India Gate,No Driver Found,,,
+691,RIDER-00691,DRV-PRE-02,1363.82,22,Premier Sedan,Welcome,Ghitorni Village,Cancelled by Driver,12.68871112240563,,
+671,RIDER-00671,DRV-BIK-01,1319.12,21,Bike,Inderlok,Gurgaon Sector 56,Completed,19.328563105755848,40.5,12.1
+675,RIDER-00675,DRV-AUT-03,1332.89,22,Auto,Saket,India Gate,Completed,10.988119757892127,37.1,37.89
+677,RIDER-00677,DRV-BIK-02,1335.89,22,Bike,Ghitorni,Kirti Nagar,Completed,11.284659065349615,34.5,2.74
+696,RIDER-00696,,1367.15,22,Go Sedan,Munirka,Panipat,No Driver Found,,,
+680,RIDER-00680,DRV-GOS-01,1341.9,22,Go Sedan,Moolchand,Ashok Park Main,Completed,6.253443824701117,35.0,20.5
+686,RIDER-00686,DRV-GOM-02,1350.91,22,Go Mini,Kashmere Gate,IMT Manesar,Completed,5.304500231071688,29.8,33.93
+697,RIDER-00697,DRV-GOM-01,1375.88,22,Go Mini,Sushant Lok,Hauz Rani,Cancelled by Driver,17.93450023107157,,
+692,RIDER-00692,DRV-GOM-03,1363.98,22,Go Mini,Greater Noida,Preet Vihar,Completed,14.319434267856332,17.3,38.41
+693,RIDER-00693,DRV-AUT-04,1364.04,22,Auto,Kirti Nagar,Azadpur,Incomplete,2.602327667901227,34.0,2.79
+700,RIDER-00700,DRV-GOM-02,1388.72,23,Go Mini,Rajiv Nagar,Moolchand,Cancelled by Driver,11.994500231071607,,
+695,RIDER-00695,DRV-AUT-01,1365.38,22,Auto,Noida Sector 62,Model Town,Completed,4.49993582557704,32.3,40.73
+688,RIDER-00688,DRV-GOS-02,1354.15,22,Go Sedan,Noida Film City,Saket A Block,Completed,18.970625007677018,39.3,31.05
+698,RIDER-00698,DRV-PRE-01,1377.26,22,Premier Sedan,Mansarovar Park,DLF City Court,Completed,5.00409663568189,30.3,33.35
+694,RIDER-00694,DRV-BIK-03,1364.76,22,Bike,Greater Kailash,Subhash Chowk,Completed,25.78856310575575,23.2,26.88
+701,RIDER-00701,DRV-EBI-01,1390.15,23,eBike,Lal Quila,Saket A Block,Completed,12.096762156965587,20.9,26.53
+702,RIDER-00702,DRV-AUT-02,1396.89,23,Auto,Ghitorni Village,Central Secretariat,Completed,8.452327667900999,20.3,5.47
+699,RIDER-00699,DRV-GOS-03,1381.26,23,Go Sedan,Shastri Nagar,Panipat,Completed,14.093443824701307,35.0,16.1

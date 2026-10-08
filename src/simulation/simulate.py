@@ -223,7 +223,9 @@ def request_arrivals(env, driver_pools, driver_counters, stats, results, demand_
     """Generates ride requests at a rate that varies by hour, matching real demand shape."""
     request_id = 0
     daily_target = stats["avg_daily_requests"] * demand_multiplier
-
+    if daily_target <= 0:
+        # Zero demand: no requests at all, deterministically (not just "very unlikely")
+        return
     while True:
         current_hour = int((env.now // 60) % 24)
         weight = stats["hourly_weights"].get(current_hour, 1 / 24)

@@ -36,8 +36,7 @@
       </div>
       <div class="control">
         <label for="demandMultiplier">Demand</label>
-        <input type="range" id="demandMultiplier" min="0.5" max="2.0" step="0.1" value="1.0">
-        <output id="demandVal">1.0×</output>
+<input type="range" id="demandMultiplier" min="0" max="2.0" step="0.1" value="1.0">        <output id="demandVal">1.0×</output>
       </div>
       <div class="control">
         <label for="seed">Seed</label>
@@ -73,7 +72,11 @@
       <span class="ticker-label">Avg wait</span>
     </div>
   </section>
-
+  <section id="correlationSection" class="panel reveal" style="display:none;">
+    <h2>Demand vs. completed rides <span class="panel-note" id="correlationValue"></span></h2>
+    <canvas id="correlationChart"></canvas>
+  </section>
+  
   <section id="chartsSection" class="chart-grid" style="display:none;">
     <div class="panel">
       <h2>Outcome breakdown</h2>

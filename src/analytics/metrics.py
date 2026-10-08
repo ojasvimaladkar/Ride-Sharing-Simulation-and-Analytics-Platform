@@ -21,6 +21,22 @@ REPORTS_DIR = Path(__file__).resolve().parents[2] / "outputs" / "reports"
 
 def compute_kpis(df: pd.DataFrame, num_drivers: int, sim_duration_min: int) -> dict:
     total = len(df)
+    if total == 0:
+        # Zero demand (or a configuration that happened to generate no requests):
+        # return a well-formed all-zero result instead of dividing by zero.
+        return {
+            "total_requests": 0,
+            "completion_rate_pct": 0.0,
+            "driver_cancellation_rate_pct": 0.0,
+            "customer_cancellation_rate_pct": 0.0,
+            "no_driver_found_rate_pct": 0.0,
+            "incomplete_rate_pct": 0.0,
+            "avg_wait_time_min": 0.0,
+            "avg_trip_duration_min": 0.0,
+            "avg_trip_distance_km": 0.0,
+            "driver_utilization_pct": 0.0,
+            "avg_driver_idle_time_min": float(sim_duration_min),
+        }
     counts = df["status"].value_counts()
 
     # Driver utilization: sum up how many minutes drivers were occupied

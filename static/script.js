@@ -49,6 +49,8 @@ async function runSimulation() {
     renderKpis(data.kpis);
     renderOutcomeChart(data.outcome_counts);
     renderHourlyChart(data.hourly);
+    renderCorrelationChart(data.hourly, data.hourly_completed, data.demand_completion_correlation);
+    document.getElementById("correlationSection").style.display = "block";
     renderTable(data.sample);
 
     lastSample = data.sample;
@@ -93,6 +95,54 @@ function renderOutcomeChart(outcomeCounts) {
       plugins: { legend: { display: false } },
       scales: {
         x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
+        y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
+      },
+    },
+  });
+}
+
+let correlationChart;
+
+function renderCorrelationChart(hourlyRequests, hourlyCompleted, correlation) {
+  const ctx = document.getElementById("correlationChart");
+  const labels = Object.keys(hourlyRequests).sort((a, b) => a - b);
+
+  const corrText = document.getElementById("correlationValue");
+  corrText.textContent = correlation === null
+    ? "(undefined \u2014 no variation to correlate)"
+    : `r = ${correlation} (Pearson correlation)`;
+
+  if (correlationChart) correlationChart.destroy();
+  correlationChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: labels.map((h) => h + ":00"),
+      datasets: [
+        {
+          label: "Requests",
+          data: labels.map((h) => hourlyRequests[h]),
+          borderColor: AMBER,
+          backgroundColor: "rgba(242,169,59,0.08)",
+          tension: 0.3,
+          pointRadius: 0,
+        },
+        {
+          label: "Completed",
+          data: labels.map((h) => hourlyCompleted[h]),
+          borderColor: TEAL,
+          backgroundColor: "rgba(63,193,176,0.08)",
+          tension: 0.3,
+          pointRadius: 0,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { color: INK, font: { family: "IBM Plex Mono", size: 11 } } },
+      },
+      scales: {
+        x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 10 } }, grid: { color: GRID } },
         y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },
       },
     },
@@ -199,18 +249,7 @@ async function runScenarios() {
 
 // ---------- CSV download ----------
 function downloadCsv() {
-  if (!lastSample.length) return;
-  const columns = Object.keys(lastSample[0]);
-  const rows = [columns.join(",")].concat(
-    lastSample.map((row) => columns.map((c) => row[c]).join(","))
-  );
-  const blob = new Blob([rows.join("\n")], { type: "text/csv" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "synthetic_rides_sample.csv";
-  a.click();
-  URL.revokeObjectURL(url);
+  window.location.href = "/api/download-full";
 }
 
 runSimBtn.addEventListener("click", runSimulation);
