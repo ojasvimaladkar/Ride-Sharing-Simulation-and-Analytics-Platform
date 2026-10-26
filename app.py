@@ -62,7 +62,7 @@ def api_stats():
 @app.route("/api/simulate", methods=["POST"])
 def api_simulate():
     data = request.get_json(force=True) or {}
-    num_drivers = int(data.get("num_drivers", 9))
+    num_drivers = int(data.get("num_drivers", 25))
     demand_multiplier = float(data.get("demand_multiplier", 1.0))
     seed = int(data.get("seed", 42))
 

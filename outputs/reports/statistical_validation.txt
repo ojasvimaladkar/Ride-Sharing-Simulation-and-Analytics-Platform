@@ -1,8 +1,8 @@
 Statistical Validation -- Kolmogorov-Smirnov Test
 ==================================================
-wait_time_vs_VTAT: D=0.0862, p=0.007752 -> strong match
-trip_duration_vs_CTAT: D=0.0571, p=0.305726 -> strong match
-distance_vs_RideDistance: D=0.0469, p=0.549336 -> strong match
+wait_time_vs_VTAT: D=0.0916, p=0.003269 -> strong match
+trip_duration_vs_CTAT: D=0.0271, p=0.979311 -> strong match
+distance_vs_RideDistance: D=0.0461, p=0.553156 -> strong match
 
 Caveat: with large sample sizes, KS p-values are often significant
 (p < 0.05) even when distributions are visually very close. The D

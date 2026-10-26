@@ -247,6 +247,16 @@ main {
 
 .chart-grid .panel canvas { max-height: 280px; }
 
+/* Make the demand vs completed correlation chart compact */
+.correlation-chart-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+#correlationChart {
+  max-height: 220px !important;
+}
+
 /* ---------- Tables ---------- */
 .table-wrap {
   overflow-x: auto;

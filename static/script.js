@@ -70,6 +70,11 @@ async function runSimulation() {
 function renderKpis(kpis) {
   document.getElementById("kpiCompletion").textContent =
     (kpis.completion_rate_pct ?? 0) + "%";
+  const revEl = document.getElementById("kpiRevenue");
+  if (revEl) {
+    const rev = kpis.total_revenue ?? 0;
+    revEl.textContent = "₹" + Math.round(rev).toLocaleString("en-IN");
+  }
   document.getElementById("kpiNoDriver").textContent =
     (kpis.no_driver_found_rate_pct ?? 0) + "%";
   document.getElementById("kpiUtilization").textContent =
@@ -138,6 +143,7 @@ function renderCorrelationChart(hourlyRequests, hourlyCompleted, correlation) {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: true, labels: { color: INK, font: { family: "IBM Plex Mono", size: 11 } } },
       },
@@ -181,9 +187,14 @@ function renderHourlyChart(hourly) {
 }
 
 function renderTable(sample) {
-  if (!sample || sample.length === 0) return;
   const head = document.getElementById("ridesTableHead");
   const body = document.getElementById("ridesTableBody");
+
+  if (!sample || sample.length === 0) {
+    head.innerHTML = "<th>Status</th>";
+    body.innerHTML = "<tr><td style='text-align:center; color:#888; padding: 2rem;'>No transactions recorded (0 requests generated)</td></tr>";
+    return;
+  }
 
   const columns = Object.keys(sample[0]);
   head.innerHTML = columns.map((c) => `<th>${c}</th>`).join("");
@@ -207,7 +218,10 @@ async function runScenarios() {
     const tbody = document.getElementById("scenarioTableBody");
     tbody.innerHTML = results.map((r) => `
       <tr>
-        <td>${r.scenario}</td>
+        <td><strong>${r.scenario}</strong></td>
+        <td>${r.total_requests ?? 0}</td>
+        <td>${r.completed_rides ?? 0}</td>
+        <td>₹${Math.round(r.total_revenue ?? 0).toLocaleString("en-IN")}</td>
         <td>${r.completion_rate_pct ?? "-"}%</td>
         <td>${r.no_driver_found_rate_pct ?? "-"}%</td>
         <td>${r.driver_utilization_pct ?? "-"}%</td>
@@ -221,16 +235,26 @@ async function runScenarios() {
       type: "bar",
       data: {
         labels: results.map((r) => r.scenario),
-        datasets: [{
-          label: "Completion Rate (%)",
-          data: results.map((r) => r.completion_rate_pct),
-          backgroundColor: TEAL,
-          borderRadius: 2,
-        }],
+        datasets: [
+          {
+            label: "Total Requests",
+            data: results.map((r) => r.total_requests ?? 0),
+            backgroundColor: AMBER,
+            borderRadius: 2,
+          },
+          {
+            label: "Completed Rides",
+            data: results.map((r) => r.completed_rides ?? 0),
+            backgroundColor: TEAL,
+            borderRadius: 2,
+          },
+        ],
       },
       options: {
         responsive: true,
-        plugins: { legend: { display: false } },
+        plugins: {
+          legend: { display: true, labels: { color: INK, font: { family: "IBM Plex Mono", size: 11 } } },
+        },
         scales: {
           x: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 10 } }, grid: { color: GRID } },
           y: { ticks: { color: INK, font: { family: "IBM Plex Mono", size: 11 } }, grid: { color: GRID } },

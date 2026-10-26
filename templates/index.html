@@ -58,6 +58,11 @@
     </div>
     <div class="ticker-div"></div>
     <div class="ticker-item">
+      <span class="ticker-value" id="kpiRevenue">—</span>
+      <span class="ticker-label">Platform revenue</span>
+    </div>
+    <div class="ticker-div"></div>
+    <div class="ticker-item">
       <span class="ticker-value" id="kpiNoDriver">—</span>
       <span class="ticker-label">Unserved</span>
     </div>
@@ -74,7 +79,9 @@
   </section>
   <section id="correlationSection" class="panel reveal" style="display:none;">
     <h2>Demand vs. completed rides <span class="panel-note" id="correlationValue"></span></h2>
-    <canvas id="correlationChart"></canvas>
+    <div class="correlation-chart-wrap">
+      <canvas id="correlationChart"></canvas>
+    </div>
   </section>
   
   <section id="chartsSection" class="chart-grid" style="display:none;">
@@ -94,7 +101,7 @@
       <table id="scenarioTable">
         <thead>
           <tr>
-            <th>Scenario</th><th>Completed</th><th>Unserved</th>
+            <th>Scenario</th><th>Requests</th><th>Completed</th><th>Revenue</th><th>Completion rate</th><th>Unserved</th>
             <th>Utilization</th><th>Avg wait</th>
           </tr>
         </thead>

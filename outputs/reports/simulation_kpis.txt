@@ -1,13 +1,16 @@
 Simulation KPI Report
 ==============================
-total_requests: 393
-completion_rate_pct: 63.87
-driver_cancellation_rate_pct: 16.03
-customer_cancellation_rate_pct: 6.11
-no_driver_found_rate_pct: 5.85
-incomplete_rate_pct: 8.14
-avg_wait_time_min: 9.37
-avg_trip_duration_min: 29.53
-avg_trip_distance_km: 23.57
-driver_utilization_pct: 32.84
-avg_driver_idle_time_min: 967.06
+total_requests: 401
+completed_rides: 274
+completion_rate_pct: 68.33
+driver_cancellation_rate_pct: 14.46
+customer_cancellation_rate_pct: 7.48
+no_driver_found_rate_pct: 5.49
+incomplete_rate_pct: 4.24
+avg_wait_time_min: 9.63
+avg_trip_duration_min: 29.14
+avg_trip_distance_km: 25.26
+driver_utilization_pct: 32.60
+avg_driver_idle_time_min: 970.61
+total_revenue: 126432.00
+avg_fare: 461.43

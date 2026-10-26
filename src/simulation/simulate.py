@@ -55,6 +55,9 @@ def load_stats():
     n_incomplete = status_counts.get("Incomplete", 0)
     p_incomplete = n_incomplete / (n_completed + n_incomplete)
 
+    completed_df = df[df["Booking Status"].isin(["Completed", "Incomplete"])].dropna(subset=["Avg CTAT", "Ride Distance", "Booking Value"])
+    trip_records = completed_df[["Avg CTAT", "Ride Distance", "Booking Value"]].to_dict(orient="records")
+
     pickup_locations = df["Pickup Location"].dropna().unique().tolist()
     drop_locations = df["Drop Location"].dropna().unique().tolist()
     vehicle_types = df["Vehicle Type"].value_counts(normalize=True)
@@ -67,9 +70,11 @@ def load_stats():
         "vtat_samples": vtat_samples,
         "ctat_samples": ctat_samples,
         "distance_samples": distance_samples,
+        "trip_records": trip_records,
         "avg_vtat": avg_vtat,
         "avg_ctat": avg_ctat,
         "avg_distance": avg_distance,
+        "avg_fare": float(completed_df["Booking Value"].mean()) if len(completed_df) else 500.0,
         "p_customer_cancel": p_customer_cancel,
         "p_driver_cancel": p_driver_cancel,
         "p_incomplete": p_incomplete,
@@ -159,6 +164,13 @@ class ShiftController:
             yield self.env.timeout(1)
 
 
+RIDE_COLUMNS = [
+    "ride_id", "rider_id", "driver_id", "request_time_min", "hour",
+    "vehicle_type", "pickup_location", "drop_location", "status",
+    "wait_time", "dispatch_time", "trip_duration", "distance", "fare"
+]
+
+
 def handle_request(env, request_id, driver_pools, driver_counters, stats, results):
     """One ride request, matched only to a driver of the SAME vehicle type."""
     vehicle_type = random.choices(stats["vehicle_types"], weights=stats["vehicle_type_weights"], k=1)[0]
@@ -177,7 +189,7 @@ def handle_request(env, request_id, driver_pools, driver_counters, stats, result
     pool = driver_pools.get(vehicle_type)
     if pool is None:
         results.append({**base_record, "status": "No Driver Found",
-                         "wait_time": None, "trip_duration": None, "distance": None})
+                         "wait_time": None, "dispatch_time": None, "trip_duration": None, "distance": None, "fare": None})
         return
 
     with pool.request(priority=10) as req:
@@ -185,7 +197,7 @@ def handle_request(env, request_id, driver_pools, driver_counters, stats, result
 
         if req not in got_driver:
             results.append({**base_record, "status": "No Driver Found",
-                             "wait_time": None, "trip_duration": None, "distance": None})
+                             "wait_time": None, "dispatch_time": None, "trip_duration": None, "distance": None, "fare": None})
             return
 
         driver_counters[vehicle_type] = driver_counters.get(vehicle_type, 0) + 1
@@ -199,24 +211,38 @@ def handle_request(env, request_id, driver_pools, driver_counters, stats, result
         yield env.timeout(vtat)
         wait_time = queue_delay + vtat
 
-        if random.random() < stats["p_customer_cancel"]:
+        # Dynamic behavioral cancellation: riders waiting longer have higher probability of cancelling
+        # Base cancellation ~3.5% for instant pickups, scaling smoothly to ~17% as wait approaches 15 min.
+        base_p_cancel = stats.get("p_customer_cancel", 0.07)
+        dynamic_p_cancel = max(0.02, min(0.35, base_p_cancel * (0.5 + 0.08 * wait_time)))
+
+        if random.random() < dynamic_p_cancel:
             results.append({**base_record, "status": "Cancelled by Customer",
-                             "wait_time": wait_time, "trip_duration": None, "distance": None})
+                             "wait_time": wait_time, "dispatch_time": vtat, "trip_duration": None, "distance": None, "fare": None})
             return
 
         if random.random() < stats["p_driver_cancel"]:
             results.append({**base_record, "status": "Cancelled by Driver",
-                             "wait_time": wait_time, "trip_duration": None, "distance": None})
+                             "wait_time": wait_time, "dispatch_time": vtat, "trip_duration": None, "distance": None, "fare": None})
             return
 
-        trip_duration = random.choice(stats["ctat_samples"]) if stats["ctat_samples"] else stats["avg_ctat"]
-        distance = random.choice(stats["distance_samples"]) if stats["distance_samples"] else stats["avg_distance"]
+        # Joint sampling: duration, distance, and booking fare are sampled as a coupled observation
+        if stats.get("trip_records"):
+            trip = random.choice(stats["trip_records"])
+            trip_duration = trip["Avg CTAT"]
+            distance = trip["Ride Distance"]
+            fare = trip["Booking Value"]
+        else:
+            trip_duration = random.choice(stats["ctat_samples"]) if stats["ctat_samples"] else stats["avg_ctat"]
+            distance = random.choice(stats["distance_samples"]) if stats["distance_samples"] else stats["avg_distance"]
+            fare = stats.get("avg_fare", 500.0)
+
         yield env.timeout(trip_duration)
 
         status = "Incomplete" if random.random() < stats["p_incomplete"] else "Completed"
         results.append({**base_record, "status": status,
-                         "wait_time": wait_time, "trip_duration": trip_duration,
-                         "distance": distance})
+                         "wait_time": wait_time, "dispatch_time": vtat, "trip_duration": trip_duration,
+                         "distance": distance, "fare": fare})
 
 
 def request_arrivals(env, driver_pools, driver_counters, stats, results, demand_multiplier):
@@ -262,6 +288,8 @@ def run_simulation(num_drivers=NUM_DRIVERS, demand_multiplier=1.0,
     env.run(until=sim_duration_min)
 
     df = pd.DataFrame(results)
+    if df.empty:
+        df = pd.DataFrame(columns=RIDE_COLUMNS)
     return df, stats
 
 

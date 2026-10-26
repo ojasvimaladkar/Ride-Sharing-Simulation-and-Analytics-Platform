@@ -26,6 +26,7 @@ def compute_kpis(df: pd.DataFrame, num_drivers: int, sim_duration_min: int) -> d
         # return a well-formed all-zero result instead of dividing by zero.
         return {
             "total_requests": 0,
+            "completed_rides": 0,
             "completion_rate_pct": 0.0,
             "driver_cancellation_rate_pct": 0.0,
             "customer_cancellation_rate_pct": 0.0,
@@ -36,20 +37,30 @@ def compute_kpis(df: pd.DataFrame, num_drivers: int, sim_duration_min: int) -> d
             "avg_trip_distance_km": 0.0,
             "driver_utilization_pct": 0.0,
             "avg_driver_idle_time_min": float(sim_duration_min),
+            "total_revenue": 0.0,
+            "avg_fare": 0.0,
         }
     counts = df["status"].value_counts()
 
-    # Driver utilization: sum up how many minutes drivers were occupied
-    # (wait_time covers assignment->pickup; trip_duration covers the trip itself, if it happened)
-    occupied_time = df["wait_time"].fillna(0) + df["trip_duration"].fillna(0)
+    # Driver utilization: sum up minutes drivers were actively engaged
+    # (dispatch_time covers driver transit to pickup; trip_duration covers the ride itself)
+    dispatch = df["dispatch_time"] if "dispatch_time" in df.columns else df["wait_time"]
+    occupied_time = dispatch.fillna(0) + df["trip_duration"].fillna(0)
     total_busy_minutes = occupied_time.sum()
     total_available_minutes = num_drivers * sim_duration_min
 
     utilization_pct = total_busy_minutes / total_available_minutes * 100
     avg_idle_min = sim_duration_min - (total_busy_minutes / num_drivers)
 
+    # Revenue calculation: completed rides generate customer fare revenue
+    completed_rides = df[df["status"] == "Completed"]
+    fares = completed_rides["fare"].dropna() if "fare" in completed_rides.columns else pd.Series(dtype=float)
+    total_revenue = float(fares.sum()) if len(fares) else 0.0
+    avg_fare = float(fares.mean()) if len(fares) else 0.0
+
     return {
         "total_requests": total,
+        "completed_rides": int(counts.get("Completed", 0)),
         "completion_rate_pct": counts.get("Completed", 0) / total * 100,
         "driver_cancellation_rate_pct": counts.get("Cancelled by Driver", 0) / total * 100,
         "customer_cancellation_rate_pct": counts.get("Cancelled by Customer", 0) / total * 100,
@@ -60,6 +71,8 @@ def compute_kpis(df: pd.DataFrame, num_drivers: int, sim_duration_min: int) -> d
         "avg_trip_distance_km": df["distance"].dropna().mean(),
         "driver_utilization_pct": utilization_pct,
         "avg_driver_idle_time_min": avg_idle_min,
+        "total_revenue": total_revenue,
+        "avg_fare": avg_fare,
     }
 
 
