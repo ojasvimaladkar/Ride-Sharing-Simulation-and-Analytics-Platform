@@ -1,17 +1,16 @@
 :root {
-  --bg: #12151a;
-  --panel: #171b21;
-  --line: #262b33;
-  --line-bright: #383f4a;
-  --text: #dde1e6;
-  --text-dim: #7c8494;
-  --amber: #f2a93b;
-  --amber-dim: #7a5a22;
-  --teal: #3fc1b0;
-  --danger: #e5573d;
-  --sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --bg: #12151a;          /* Background of the entire page (very dark blue-gray) */
+  --panel: #171b21;       /* Background of cards and panels */
+  --line: #262b33;        /* Subtle grid lines & borders */
+  --line-bright: #383f4a; /* Hover borders & button borders */
+  --text: #dde1e6;        /* Primary text color (light off-white) */
+  --text-dim: #7c8494;    /* Subtitle and secondary text color */
+  --amber: #f2a93b;       /* Accent highlight / primary button (warm amber) */
+  --amber-dim: #7a5a22;   /* Darker accent */
+  --teal: #3fc1b0;        /* Secondary graph color (teal/cyan) */
+  --danger: #e5573d;      /* Warning / cancel color */
 }
+
 
 * { box-sizing: border-box; }
 

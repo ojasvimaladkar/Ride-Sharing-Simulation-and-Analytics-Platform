@@ -3,7 +3,6 @@ const numDriversInput = document.getElementById("numDrivers");
 const numDriversVal = document.getElementById("numDriversVal");
 const demandInput = document.getElementById("demandMultiplier");
 const demandVal = document.getElementById("demandVal");
-const seedInput = document.getElementById("seed");
 const runSimBtn = document.getElementById("runSimBtn");
 const runScenariosBtn = document.getElementById("runScenariosBtn");
 const downloadBtn = document.getElementById("downloadBtn");
@@ -34,7 +33,7 @@ async function runSimulation() {
     const payload = {
       num_drivers: parseInt(numDriversInput.value, 10),
       demand_multiplier: parseFloat(demandInput.value),
-      seed: parseInt(seedInput.value, 10),
+      seed: 42,
     };
 
     const res = await fetch("/api/simulate", {
@@ -108,14 +107,9 @@ function renderOutcomeChart(outcomeCounts) {
 
 let correlationChart;
 
-function renderCorrelationChart(hourlyRequests, hourlyCompleted, correlation) {
+function renderCorrelationChart(hourlyRequests, hourlyCompleted) {
   const ctx = document.getElementById("correlationChart");
   const labels = Object.keys(hourlyRequests).sort((a, b) => a - b);
-
-  const corrText = document.getElementById("correlationValue");
-  corrText.textContent = correlation === null
-    ? "(undefined \u2014 no variation to correlate)"
-    : `r = ${correlation} (Pearson correlation)`;
 
   if (correlationChart) correlationChart.destroy();
   correlationChart = new Chart(ctx, {
@@ -210,7 +204,7 @@ async function runScenarios() {
     const res = await fetch("/api/scenarios", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ seed: parseInt(seedInput.value, 10) }),
+      body: JSON.stringify({ seed: 42 }),
     });
     if (!res.ok) throw new Error(`Server error: ${res.status}`);
     const results = await res.json();
